@@ -9,16 +9,14 @@ public class Cell {
     }
     public void setOxygenCarbonDioxide(char oxygen){
         if(cellType == CellType.H){
-            oxygenCarbonDioxide = 'o';
-            changeOxygenCarbonDioxide();
+            oxygenCarbonDioxide = oxygen;
+            oxygenCarbonDioxide = 'c';
         }
     }
-    public void changeOxygenCarbonDioxide(){
-        oxygenCarbonDioxide = 'c';
+    public void emptyCarbonDioxide(){
+        if(cellType == CellType.H){
+            oxygenCarbonDioxide = 'n';
+        }
     }
-    public char getOxygenCarbonDioxide(){
-        char carbonDioxide = oxygenCarbonDioxide;
-        oxygenCarbonDioxide = 'n';
-        return carbonDioxide;
-    }
+
 }

@@ -13,6 +13,8 @@ public class Human {
     private final Lung leftLung;
     private final Lung rightLung;
 
+    private final boolean isAlive;
+
     public Human(String firstName, String secondName, Gender gender, Date date, boolean smoker, boolean vaccinated){
         this.firstName = firstName;
         this.secondName = secondName;
@@ -24,5 +26,14 @@ public class Human {
         rightLung = new Lung(smoker);
         leftLung.setCells();
         rightLung.setCells();
+        isAlive = true;
+    }
+    public void breatheIn(){
+        leftLung.fillLung();
+        rightLung.fillLung();
+    }
+    public void breatheOut(){
+        leftLung.emptyLung();
+        rightLung.emptyLung();
     }
 }
