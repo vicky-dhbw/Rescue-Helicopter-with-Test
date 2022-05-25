@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="new with Test">
-      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/flight_recorder.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/flight_recorder.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Configuration/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Configuration/Configuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Cell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/CellType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Gender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Human.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/InfectedCell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Lung.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Viron.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CockpitComponents/AntiTorquePedal.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +24,14 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -37,6 +52,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Users/vickysharma/Desktop/Java Projects/Rescue-Helicopter-withTest",
     "node.js.detected.package.eslint": "true",
@@ -71,6 +88,7 @@
       <workItem from="1653479105123" duration="11000" />
       <workItem from="1653479160087" duration="29000" />
       <workItem from="1653479203378" duration="427000" />
+      <workItem from="1653489629609" duration="10466000" />
     </task>
     <task id="LOCAL-00001" summary="new with Test">
       <created>1653479299619</created>
