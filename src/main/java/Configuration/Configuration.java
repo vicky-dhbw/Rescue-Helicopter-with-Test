@@ -11,7 +11,7 @@ public enum Configuration {
 
     public final int numberOfSeatsInCabin=2;
 
-    public final String filename="src/BasicComponents/flight_recorder.txt";
+    public final String filename="src/main/java/BasicComponents/flight_recorder.txt";
 
     public final String dateTimeFormat="dd.MM.yyyy HH:mm:ss.SSSSSS";
 
