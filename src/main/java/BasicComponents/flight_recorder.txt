@@ -1,0 +1,82 @@
+-----------------------------
+25.05.2022 13:08:47.301338
+main rotor switched on!
+left battery consumed till Cell L: 0 B: 0 H: 3
+right battery consumed till Cell L: 0 B: 0 H: 2
+-----------------------------
+25.05.2022 13:08:47.482306
+Battery usage level set to: L
+-----------------------------
+25.05.2022 13:08:47.483174
+try to switch on main rotor failed, since motor is already on..
+-----------------------------
+25.05.2022 13:08:47.483362
+Battery usage level set to: B
+-----------------------------
+25.05.2022 13:08:47.483542
+main rotor switched off!
+-----------------------------
+25.05.2022 13:08:47.483736
+main rotor switched on!
+left battery consumed till Cell L: 0 B: 0 H: 7
+right battery consumed till Cell L: 0 B: 0 H: 5
+-----------------------------
+25.05.2022 13:08:47.483952
+-----------------------------
+25.05.2022 13:08:47.484044
+increasing pitch angle of Main Rotor...
+--> lifting helicopter....
+-----------------------------
+25.05.2022 13:08:47.484191
+decreasing pitch angle of Main Rotor...
+--> sinking helicopter....
+-----------------------------
+25.05.2022 13:08:47.484386
+increasing pitch angle of Main Rotor...
+--> lifting helicopter....
+-----------------------------
+25.05.2022 13:08:47.484536
+Cyclic stick moved 1 degree LEFT
+helicopter going LEFT with a speed of 50.0 km/h ....
+-----------------------------
+25.05.2022 13:08:47.496735
+Cyclic stick moved 3 degree BACKWARD
+helicopter going BACKWARD with a speed of 150.0 km/h ....
+-----------------------------
+25.05.2022 13:08:47.497367
+Cyclic stick moved 5 degree FORWARD
+helicopter going FORWARD with a speed of 250.0 km/h ....
+-----------------------------
+25.05.2022 13:08:47.497896
+Cyclic stick moved 4 degree RIGHT
+helicopter going RIGHT with a speed of 200.0 km/h ....
+-----------------------------
+25.05.2022 13:08:47.498622
+Anti collision light switched on!
+-----------------------------
+25.05.2022 13:08:47.499523
+Anti collision light switched off!
+-----------------------------
+25.05.2022 13:08:47.500153
+Anti collision light switched on!
+-----------------------------
+25.05.2022 13:08:47.501015
+--> opening back doors..  ..I   I..
+-----------------------------
+25.05.2022 13:08:47.501362
+--> closing back doors..  ..II..
+-----------------------------
+25.05.2022 13:08:47.501569
+---> lift of tail rotor is decreased.
+yawing the helicopter to the left...
+tail of the helicopter is turning in the direction of the rotation of main rotor..
+-----------------------------
+25.05.2022 13:08:47.501851
+---> lift of tail rotor is increased.
+yawing the helicopter to the right...
+tail of the helicopter is turning opposite to the direction of the rotation of main rotor..
+-----------------------------
+25.05.2022 13:08:47.502135
+---> lift of tail rotor is decreased.
+yawing the helicopter to the left...
+tail of the helicopter is turning in the direction of the rotation of main rotor..
