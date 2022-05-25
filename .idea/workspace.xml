@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="Human">
-      <change afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/SeverityCovid.java" afterDir="false" />
+    <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="Human finished">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Cell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Human.java" afterDir="false" />
@@ -84,7 +83,7 @@
       <workItem from="1653479105123" duration="11000" />
       <workItem from="1653479160087" duration="29000" />
       <workItem from="1653479203378" duration="427000" />
-      <workItem from="1653489629609" duration="14280000" />
+      <workItem from="1653489629609" duration="19810000" />
     </task>
     <task id="LOCAL-00001" summary="new with Test">
       <created>1653479299619</created>
@@ -100,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653502415085</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Human finished">
+      <created>1653505983020</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1653505983020</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +126,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new with Test" />
     <MESSAGE value="Human" />
-    <option name="LAST_COMMIT_MESSAGE" value="Human" />
+    <MESSAGE value="Human finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Human finished" />
   </component>
 </project>

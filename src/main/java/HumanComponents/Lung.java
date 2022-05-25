@@ -13,6 +13,10 @@ public class Lung {
         this.smoker = smoker;
         cells = new Cell[50][20];
     }
+
+    public Cell[][] getCells() {
+        return cells;
+    }
     public void setDamagedCells(){
         int positioni = random.nextInt()%50;
         int positionj = random.nextInt()%20;
@@ -23,7 +27,7 @@ public class Lung {
             setDamagedCells();
         }
     }
-    public void setInfectedCells(){
+    /*public void setInfectedCells(){
         int positioni = random.nextInt()%50;
         int positionj = random.nextInt()%20;
         if(cells[positioni][positionj] == null){
@@ -32,11 +36,11 @@ public class Lung {
         else{
             setInfectedCells();
         }
-    }
+    }*/
     public void setCells(){
         if(smoker){
-            numberOfDamagedCells = cells.length/10*2;
-            for(int i=0; i<cells.length/10*2; i++){
+            numberOfDamagedCells = cells.length/5; //20 percent are damaged if smoker is true
+            for(int i=0; i<numberOfDamagedCells; i++){
                 setDamagedCells();
             }
         }
@@ -66,9 +70,7 @@ public class Lung {
     public void emptyLung(){
         for(int i=0; i<50; i++){
             for(int j=0; j<20; j++){
-                if(cells[i][j] == null){
                     cells[i][j].emptyCarbonDioxide();
-                }
             }
         }
     }
@@ -77,7 +79,7 @@ public class Lung {
         for(int i=0; i<50; i++){
             for(int j=0; j<20; j++){
                 cells[i][j].setOxygenCarbonDioxide('o');
-                if(random.nextInt()%100<probability){
+                if(random.nextInt()%100<probability && (cells[i][j].getCellType()==CellType.H)){
                     cells[i][j] = new InfectedCell(CellType.I);
                 }
             }

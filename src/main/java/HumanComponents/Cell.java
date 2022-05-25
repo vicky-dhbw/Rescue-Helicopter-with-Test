@@ -7,6 +7,9 @@ public class Cell {
         this.cellType = cellType;
         oxygenCarbonDioxide = 'n';//n=null
     }
+    public CellType getCellType(){
+        return cellType;
+    }
     public void setOxygenCarbonDioxide(char oxygen){
         if(cellType == CellType.H){
             oxygenCarbonDioxide = oxygen;
