@@ -1,15 +1,68 @@
 import BasicComponents.CentralUnit;
 import BasicComponents.Manufacturer;
 import BasicComponents.RescueHelicopter;
+import HumanComponents.Gender;
+import HumanComponents.Human;
 import TechnicsComponents.BatteryManagement;
 
 import java.io.FileNotFoundException;
+import java.util.Date;
 
 public class Builder {
 
     public static void main(String[] args) throws FileNotFoundException {
         int i=0;
 
+
+        Human human = new Human("Bernhard", "Schwab", Gender.MALE, "24.09.1998", true, false);
+        human.breatheIn();
+        human.breatheOut();
+        human.breatheIn();
+        human.breatheOut();
+        human.breatheIn();
+        human.breatheOut();
+        human.breatheIn();
+        human.breatheOut();
+        human.breatheIn();
+        human.breatheOut();
+        human.breatheIn();
+        human.breatheOut();
+        human.breatheIn();
+        human.breatheOut();
+        human.breatheIn();
+        human.breatheOut();
+        human.breatheIn();
+        human.breatheOut();
+        human.breatheIn();
+        human.breatheOut();
+        human.breatheIn();
+        human.breatheOut();
+        human.breatheIn();
+        human.breatheOut();
+        human.breatheIn();
+        human.breatheOut();
+        human.breatheIn();
+        human.breatheOut();
+        human.breatheIn();
+        human.breatheOut();
+        human.breatheIn();
+        human.breatheOut();
+        human.breatheIn();
+        human.breatheOut();
+        human.breatheIn();
+        human.breatheOut();
+        human.breatheIn();
+        human.breatheOut();
+        human.breatheIn();
+        human.breatheOut();
+        human.breatheIn();
+        human.breatheOut();
+        human.breatheIn();
+        human.breatheOut();
+        human.breatheIn();
+        human.breatheOut();
+        human.breatheIn();
+        human.breatheOut();
         RescueHelicopter rescueHelicopter=new RescueHelicopter(Manufacturer.AIRBUS);
         rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffMainRotor(true);
         rescueHelicopter.getCockpitLeft().getControl_panel().setDroneFree();
