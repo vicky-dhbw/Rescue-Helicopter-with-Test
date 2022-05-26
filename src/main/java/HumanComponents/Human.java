@@ -1,6 +1,6 @@
 package HumanComponents;
 
-public class Human {
+public abstract class Human {
     private String firstName;
     private String secondName;
     private Gender gender;

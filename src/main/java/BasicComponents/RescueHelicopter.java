@@ -4,6 +4,7 @@ import DroneComponents.*;
 import CockpitComponents.Cockpit;
 import Configuration.Position;
 import TechnicsComponents.Technics;
+import HumanComponents.*;
 
 import java.io.FileNotFoundException;
 import java.util.UUID;
@@ -32,6 +33,15 @@ public class RescueHelicopter {
     LandingLight landingLight=new LandingLight();
 
     AntiCollisionLight antiCollisionLight=new AntiCollisionLight();
+
+    private final Pilot pilot1=new Pilot();
+    private final Pilot pilot2=new Pilot();
+
+    private Patient patient;
+
+    private final Paramedic paramedic=new Paramedic();
+
+    private final EmergencyDoctor emergencyDoctor=new EmergencyDoctor();
 
 
     public RescueHelicopter(Manufacturer manufacturer){
@@ -62,4 +72,15 @@ public class RescueHelicopter {
     }
 
 
+    public Pilot getPilot1() {
+        return pilot1;
+    }
+
+    public Pilot getPilot2() {
+        return pilot2;
+    }
+
+    public Patient getPatient() {
+        return patient;
+    }
 }

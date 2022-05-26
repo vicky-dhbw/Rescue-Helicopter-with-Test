@@ -5,11 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="Human finished also with method choke">
+      <change afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/EmergencyDoctor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/IDCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/LicenceType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Paramedic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Patient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Pilot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/SpecialIDCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Staff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/TypeValidation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/RescueHelicopter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/RescueHelicopter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/flight_recorder.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/flight_recorder.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Builder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Configuration/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Configuration/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Cell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Lung.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Lung.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Patient.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -36,6 +47,15 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/BasicComponents/CentralUnit.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/BasicComponents/RescueHelicopter.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/CockpitComponents/Control_Panel.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/DroneComponents/Drone.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/DroneComponents/DroneCentralUnit.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/DroneComponents/Section.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/DroneComponents/Storage.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -115,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653511778303</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Human finished also with method choke">
+      <created>1653591371070</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1653591371070</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +208,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
           <line>64</line>
           <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
+          <line>117</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
+          <line>118</line>
+          <option name="timeStamp" value="68" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

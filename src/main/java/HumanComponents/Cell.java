@@ -22,4 +22,7 @@ public class Cell {
         }
     }
 
+    public void setCellType(CellType cellType){
+        this.cellType=cellType;
+    }
 }
