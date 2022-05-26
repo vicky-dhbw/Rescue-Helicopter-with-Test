@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="all works fine here">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/CentralUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/CentralUnit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/flight_recorder.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/flight_recorder.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CockpitComponents/Control_Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CockpitComponents/Control_Panel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DroneComponents/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DroneComponents/Camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DroneComponents/Drone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DroneComponents/Drone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DroneComponents/DroneCentralUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DroneComponents/DroneCentralUnit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DroneComponents/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DroneComponents/Section.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DroneComponents/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DroneComponents/Storage.java" afterDir="false" />
-    </list>
+    <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="comments added to my droneComponents!" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +72,7 @@
       <workItem from="1653479203378" duration="427000" />
       <workItem from="1653501132240" duration="1145000" />
       <workItem from="1653504865596" duration="2928000" />
-      <workItem from="1653549645553" duration="3179000" />
+      <workItem from="1653549645553" duration="3626000" />
     </task>
     <task id="LOCAL-00001" summary="new with Test">
       <created>1653479299619</created>
@@ -91,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653479299619</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="comments added to my droneComponents!">
+      <created>1653552890241</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653552890241</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +107,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new with Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="new with Test" />
+    <MESSAGE value="comments added to my droneComponents" />
+    <MESSAGE value="comments added to my droneComponents!" />
+    <option name="LAST_COMMIT_MESSAGE" value="comments added to my droneComponents!" />
   </component>
 </project>
