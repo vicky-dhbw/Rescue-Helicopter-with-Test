@@ -12,15 +12,15 @@ public class Human {
     private boolean isAlive;
     private boolean lungsAreFilled;
 
-    public Human(String firstName, String secondName, Gender gender, String birthDate, boolean smoker, boolean vaccinated) {
+    public Human(boolean isInvected, String firstName, String secondName, Gender gender, String birthDate, boolean smoker, boolean vaccinated) {
         this.firstName = firstName;
         this.secondName = secondName;
         this.gender = gender;
         this.birthDate = birthDate;
         this.smoker = smoker;
         this.vaccinated = vaccinated;
-        leftLung = new Lung(smoker);
-        rightLung = new Lung(smoker);
+        leftLung = new Lung(smoker, isInvected);
+        rightLung = new Lung(smoker, isInvected);
         leftLung.setCells();
         rightLung.setCells();
         isAlive = true;

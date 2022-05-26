@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="Human finished also with method choke">
+    <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="Human correction of mistakes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/flight_recorder.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/flight_recorder.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Builder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Configuration/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Configuration/Configuration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Human.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Lung.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Lung.java" afterDir="false" />
     </list>
@@ -24,18 +24,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Berni" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -85,7 +86,7 @@
       <workItem from="1653479160087" duration="29000" />
       <workItem from="1653479203378" duration="427000" />
       <workItem from="1653489629609" duration="19970000" />
-      <workItem from="1653555439620" duration="9864000" />
+      <workItem from="1653555439620" duration="16548000" />
     </task>
     <task id="LOCAL-00001" summary="new with Test">
       <created>1653479299619</created>
@@ -115,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653511778303</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Human correction of mistakes.">
+      <created>1653565440014</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1653565440014</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,50 +145,26 @@
     <MESSAGE value="Human" />
     <MESSAGE value="Human finished" />
     <MESSAGE value="Human finished also with method choke" />
-    <option name="LAST_COMMIT_MESSAGE" value="Human finished also with method choke" />
+    <MESSAGE value="Human correction of mistakes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Human correction of mistakes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="24" />
+          <line>57</line>
+          <option name="timeStamp" value="97" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
           <line>58</line>
-          <option name="timeStamp" value="63" />
+          <option name="timeStamp" value="98" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="66" />
+          <line>18</line>
+          <option name="timeStamp" value="100" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
