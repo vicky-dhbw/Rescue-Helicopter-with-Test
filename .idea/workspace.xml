@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="Human correction with option isInvected for the patient">
-      <change afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Patient.java" afterDir="false" />
+    <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="Human correction with class Patient extends Human">
+      <change afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/IDCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/SpecialIDCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Staff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/TypeValidation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Builder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Patient.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +86,7 @@
       <workItem from="1653479160087" duration="29000" />
       <workItem from="1653479203378" duration="427000" />
       <workItem from="1653489629609" duration="19970000" />
-      <workItem from="1653555439620" duration="21565000" />
+      <workItem from="1653555439620" duration="22917000" />
     </task>
     <task id="LOCAL-00001" summary="new with Test">
       <created>1653479299619</created>
@@ -130,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653576096040</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Human correction with class Patient extends Human">
+      <created>1653581179238</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1653581179238</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,7 +161,8 @@
     <MESSAGE value="Human finished also with method choke" />
     <MESSAGE value="Human correction of mistakes." />
     <MESSAGE value="Human correction with option isInvected for the patient" />
-    <option name="LAST_COMMIT_MESSAGE" value="Human correction with option isInvected for the patient" />
+    <MESSAGE value="Human correction with class Patient extends Human" />
+    <option name="LAST_COMMIT_MESSAGE" value="Human correction with class Patient extends Human" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
