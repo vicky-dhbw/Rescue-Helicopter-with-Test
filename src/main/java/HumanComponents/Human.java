@@ -1,22 +1,18 @@
 package HumanComponents;
 
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
-
 public class Human {
     private final String firstName;
     private final String secondName;
     private final Gender gender;
-
-    private final Date birthDate;
+    private String birthDate;
     private final boolean smoker;
     private final boolean vaccinated;
     private final Lung leftLung;
     private final Lung rightLung;
-
     private boolean isAlive;
+    private boolean lungsAreFilled;
 
-    public Human(String firstName, String secondName, Gender gender, Date birthDate, boolean smoker, boolean vaccinated){
+    public Human(String firstName, String secondName, Gender gender, String birthDate, boolean smoker, boolean vaccinated) {
         this.firstName = firstName;
         this.secondName = secondName;
         this.gender = gender;
@@ -28,41 +24,39 @@ public class Human {
         leftLung.setCells();
         rightLung.setCells();
         isAlive = true;
+        lungsAreFilled = false;
     }
-    public boolean choke(){
+    private boolean choke(){
         boolean choke = false;
-        int damagedCellsLeftLung = 0;
-        int damagedCellsRightLung = 0;
-        for(int i=0; i<50; i++){
-            for(int j=0; j<20; j++){
-                if(leftLung.getCells()[i][j].getCellType()==CellType.D || leftLung.getCells()[i][j].getCellType()==CellType.I){
-                    damagedCellsLeftLung+=1;
-                }
-                if(rightLung.getCells()[i][j].getCellType()==CellType.D || rightLung.getCells()[i][j].getCellType()==CellType.I){
-                    damagedCellsRightLung+=1;
-                }
-            }
-        }
-        int percentageOfDamagedCellsLeftLung = damagedCellsLeftLung/leftLung.getCells().length*100;
-        int percentageOfDamagedCellsRightLung = damagedCellsRightLung/rightLung.getCells().length*100;
+        double damagedCellsLeftLung = leftLung.getNumberOfDamagedCells()+ leftLung.getNumberOfInfectedCells();
+        double damagedCellsRightLung = rightLung.getNumberOfDamagedCells()+ rightLung.getNumberOfInfectedCells();
+        double numberOfCells = leftLung.getNumberOfCells();
+        double percentageOfDamagedCellsLeftLung = damagedCellsLeftLung/numberOfCells*100;
+        double percentageOfDamagedCellsRightLung = damagedCellsRightLung/numberOfCells*100;
         if(percentageOfDamagedCellsLeftLung>79 || percentageOfDamagedCellsRightLung>79 || (percentageOfDamagedCellsLeftLung>64 && percentageOfDamagedCellsRightLung>64)){
             choke = true;
         }
         return choke;
     }
     public void breatheIn(){
-        if(choke()){
-            isAlive = false;
-            return;
+        if(!lungsAreFilled){
+            if(choke()){
+                isAlive = false;
+                return;
+            }
+            leftLung.fillLung();
+            rightLung.fillLung();
+            lungsAreFilled = true;
         }
-        leftLung.fillLung();
-        rightLung.fillLung();
     }
     public void breatheOut(){
-        if(isAlive==false){
-            return;
+        if(lungsAreFilled){
+            if(isAlive==false){
+                return;
+            }
+            leftLung.emptyLung();
+            rightLung.emptyLung();
+            lungsAreFilled = false;
         }
-        leftLung.emptyLung();
-        rightLung.emptyLung();
     }
 }

@@ -5,21 +5,32 @@ import java.util.Random;
 public class Lung {
     private final Cell[][] cells;
     private final boolean smoker;
-    private int numberOfDamagedCells;
+    private double numberOfDamagedCells;
+    private double numberOfCells;
+    private int numberOfInfectedCells;
     private SeverityCovid severityCovid;
-
-    Random random = new Random();
     public Lung(boolean smoker){
         this.smoker = smoker;
         cells = new Cell[50][20];
+        numberOfCells = 50*20;
+        numberOfInfectedCells = 0;
     }
 
     public Cell[][] getCells() {
         return cells;
     }
+    public double getNumberOfCells(){
+        return numberOfCells;
+    }
+    public double getNumberOfDamagedCells(){
+        return numberOfDamagedCells;
+    }
+    public int getNumberOfInfectedCells(){
+        return numberOfInfectedCells;
+    }
     public void setDamagedCells(){
-        int positioni = random.nextInt()%50;
-        int positionj = random.nextInt()%20;
+        int positioni = new Random().nextInt(50);
+        int positionj = new Random().nextInt(20);
         if(cells[positioni][positionj] == null){
             cells[positioni][positionj] = new Cell(CellType.D);
         }
@@ -27,19 +38,9 @@ public class Lung {
             setDamagedCells();
         }
     }
-    /*public void setInfectedCells(){
-        int positioni = random.nextInt()%50;
-        int positionj = random.nextInt()%20;
-        if(cells[positioni][positionj] == null){
-            cells[positioni][positionj] = new InfectedCell(CellType.I);
-        }
-        else{
-            setInfectedCells();
-        }
-    }*/
     public void setCells(){
         if(smoker){
-            numberOfDamagedCells = cells.length/5; //20 percent are damaged if smoker is true
+            numberOfDamagedCells = numberOfCells/5; //20 percent are damaged if smoker is true
             for(int i=0; i<numberOfDamagedCells; i++){
                 setDamagedCells();
             }
@@ -54,13 +55,13 @@ public class Lung {
         }
     }
     public void setSeverityCovid(){
-        if(numberOfDamagedCells/cells.length*100<4){
+        if(numberOfDamagedCells/numberOfCells*100<4){
             severityCovid = SeverityCovid.S0;
         }
-        else if(numberOfDamagedCells/cells.length*100<6){
+        else if(numberOfDamagedCells/numberOfCells*100<6){
             severityCovid = SeverityCovid.S1;
         }
-        else if(numberOfDamagedCells/cells.length*100<11){
+        else if(numberOfDamagedCells/numberOfCells*100<11){
             severityCovid = SeverityCovid.S2;
         }
         else{
@@ -79,8 +80,19 @@ public class Lung {
         for(int i=0; i<50; i++){
             for(int j=0; j<20; j++){
                 cells[i][j].setOxygenCarbonDioxide('o');
-                if(random.nextInt()%100<probability && (cells[i][j].getCellType()==CellType.H)){
+                if(new Random().nextInt(100)<probability && (cells[i][j].getCellType()==CellType.H)){
                     cells[i][j] = new InfectedCell(CellType.I);
+                }
+            }
+        }
+        setNUmberOfInfectedCells();
+    }
+    public void setNUmberOfInfectedCells(){
+        numberOfInfectedCells=0;
+        for(int i=0; i<50; i++){
+            for(int j=0; j<20; j++){
+                if(cells[i][j].getCellType()==CellType.I){
+                    numberOfInfectedCells+=1;
                 }
             }
         }
