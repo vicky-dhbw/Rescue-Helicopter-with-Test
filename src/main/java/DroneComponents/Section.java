@@ -13,6 +13,13 @@ public class Section {
 
     Random random= new Random();
 
+    // the setContent Method sets random alphabets from char pool
+    //this is not included in the default constructor, because the camera should be on first and scan the landscape--> setContent
+    //the storage cannot already contain the Sections and their contents while the camera is switched off
+    // randomly allocation of chars may accidentally place human at many places
+    //therefore the do while endures that no human are accidentally put in the section
+
+
     public void setContent(){
         char[] charPool={'a','g','h','m','n','t','u','w'};
         int randomLimitedInt;

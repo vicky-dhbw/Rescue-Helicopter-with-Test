@@ -155,10 +155,11 @@ public class CentralUnit implements CyclicStick, CollectivePitchControl, Switch,
 
         System.setOut(console);
         printBeginConsole();
-        drone.detach();
-        droneCentralUnit.switchOnCamera();
+        drone.detach();                         //the drone is detached by the calling the method in the drone class
+        droneCentralUnit.switchOnCamera();     // since this drone is managed by droneCentralUnit --> the camera is switched on from central unit of drone
+                                              //as soon as the camera turns on, the contents of the whole landscape is scanned and loaded, the search of the human is also done at this point
         droneCentralUnit.switchOffCamera();
-        drone.attach();
+        drone.attach();                      //the drone automatically attaches itself to helicopter after the human has been found
 
     }
 

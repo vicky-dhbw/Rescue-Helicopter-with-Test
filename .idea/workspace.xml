@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="new with Test">
+    <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="all works fine here">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/CentralUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/CentralUnit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/flight_recorder.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/flight_recorder.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Configuration/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Configuration/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CockpitComponents/Control_Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CockpitComponents/Control_Panel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DroneComponents/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DroneComponents/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DroneComponents/Drone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DroneComponents/Drone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DroneComponents/DroneCentralUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DroneComponents/DroneCentralUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DroneComponents/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DroneComponents/Section.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DroneComponents/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DroneComponents/Storage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,16 +42,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/vickysharma/Desktop/Java Projects/Rescue-Helicopter-withTest",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/vickysharma/Desktop/Java Projects/Rescue-Helicopter-withTest&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Builder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Builder" />
@@ -55,6 +63,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Builder" />
         <item itemvalue="Application.Builder" />
       </list>
     </recent_temporary>
@@ -71,6 +80,9 @@
       <workItem from="1653479105123" duration="11000" />
       <workItem from="1653479160087" duration="29000" />
       <workItem from="1653479203378" duration="427000" />
+      <workItem from="1653501132240" duration="1145000" />
+      <workItem from="1653504865596" duration="2928000" />
+      <workItem from="1653549645553" duration="3179000" />
     </task>
     <task id="LOCAL-00001" summary="new with Test">
       <created>1653479299619</created>

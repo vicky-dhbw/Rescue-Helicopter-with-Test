@@ -75,7 +75,9 @@ public class Control_Panel {
 
     public void setDroneFree(){
 
-        drone.freeDrone();
+        drone.freeDrone();                      //--> the method is in Central unit --> the central unit then detaches the drone
+                                                //--> the central unit turns on the camera of the drone from there
+                                                //--> and loading contents of sections and search of the human is also present there
     }
     public Control_Panel(CentralUnit centralUnit){
         this.mainRotor=centralUnit;

@@ -8,7 +8,7 @@ public class Drone {
     private boolean isDetached;
 
     private final Camera camera;
-    private final DroneCentralUnit droneCentralUnit;
+    private final DroneCentralUnit droneCentralUnit;            // the DroneCentral Unit controls the camera and the storage
 
     private final Storage storage;
 
@@ -28,9 +28,6 @@ public class Drone {
         return storage;
     }
 
-    public DroneCentralUnit getCameraCentralUnit(){
-        return droneCentralUnit;
-    }
 
     public void detach(){
         isDetached=true;
