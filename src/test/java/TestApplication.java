@@ -117,7 +117,7 @@ public class TestApplication {
     public void checkBatteryManagement(){
 
         rescueHelicopter.getCockpitRight().getControl_panel().changeEnergyUsage(BatteryManagement.L);
-        rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffMainRotor(true);
+        rescueHelicopter.getCockpitRight().getControl_panel().switchOnOffMainRotor(true);
         int[] expectedIJK=new int[]{1,19,0};
         assertArrayEquals(expectedIJK, rescueHelicopter.getTechnics().getControl().getLeftIJK());
 

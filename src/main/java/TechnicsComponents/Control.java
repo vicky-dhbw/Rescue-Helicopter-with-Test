@@ -2,7 +2,7 @@ package TechnicsComponents;
 
 public class Control {
 
-    private BatteryManagement batteryManagement;
+    private BatteryManagement batteryManagement = BatteryManagement.B;
 
     Energy energy;
 
@@ -23,7 +23,7 @@ public class Control {
         System.out.println("Battery usage level set to: "+batteryManagement );
     }
     public void useBatteries(int RPM) {
-        int energyAmount= 10;
+        int energyAmount= RPM*10;
 
         switch (batteryManagement) {
             case B -> useBothBatteries(energyAmount);
@@ -55,11 +55,8 @@ public class Control {
                 break;
             }
             leftI=i;
-
         }
         System.out.println("left battery consumed till Cell L: "+leftI+ " B: "+ leftJ+ " H: "+leftK);
-        leftK=tempK;
-
     }
 
     public void useRightBattery(int energyAmount) {
