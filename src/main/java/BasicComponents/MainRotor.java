@@ -26,7 +26,7 @@ public class MainRotor extends Rotor {
 
     public void setRaise(boolean setRaise) {
 
-        raise=setRaise;
+        raise=setRaise;       //the setRaise method only sets the
     }
 
     public void tiltLeft(int degree) {

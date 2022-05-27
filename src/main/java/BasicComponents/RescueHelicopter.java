@@ -106,4 +106,17 @@ public class RescueHelicopter {
         return drone;
     }
 
+
+    public AntiCollisionLight getAntiCollisionLight(){
+        return antiCollisionLight;
+    }
+
+    public BackEntrance getBackEntrance(){
+        return backEntrance;
+    }
+
+    public LandingLight getLandingLight(){
+        return landingLight;
+    }
+
 }

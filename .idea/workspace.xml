@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="patient is in TransportUnit, pilots are in cockpit, &#10;Doctor and paramedic are in cabin...they are at their seats">
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestApplication.java" afterDir="false" />
+    <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="test cyclic stick done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/LandingLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/LandingLight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/MainRotor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/MainRotor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/RescueHelicopter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/RescueHelicopter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/TailRotor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/TailRotor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/flight_recorder.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/flight_recorder.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +122,9 @@
       <workItem from="1653489629609" duration="19970000" />
       <workItem from="1653555439620" duration="9864000" />
       <workItem from="1653628584105" duration="11621000" />
-      <workItem from="1653646390209" duration="2574000" />
+      <workItem from="1653646390209" duration="2686000" />
+      <workItem from="1653651047082" duration="30000" />
+      <workItem from="1653659777609" duration="2652000" />
     </task>
     <task id="LOCAL-00001" summary="new with Test">
       <created>1653479299619</created>
@@ -177,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653637757320</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="test cyclic stick done">
+      <created>1653649319461</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1653649319461</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +213,8 @@
     <MESSAGE value="Human finished also with method choke" />
     <MESSAGE value="id works for pilot" />
     <MESSAGE value="patient is in TransportUnit, pilots are in cockpit, &#10;Doctor and paramedic are in cabin...they are at their seats" />
-    <option name="LAST_COMMIT_MESSAGE" value="patient is in TransportUnit, pilots are in cockpit, &#10;Doctor and paramedic are in cabin...they are at their seats" />
+    <MESSAGE value="test cyclic stick done" />
+    <option name="LAST_COMMIT_MESSAGE" value="test cyclic stick done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

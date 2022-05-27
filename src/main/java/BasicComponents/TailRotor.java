@@ -21,4 +21,8 @@ public class TailRotor extends Rotor{
         System.out.println("yawing the helicopter to the right...");
         System.out.println("tail of the helicopter is turning opposite to the direction of the rotation of main rotor..");
     }
+
+    public boolean getLiftIncreased(){
+        return liftIncreased;
+    }
 }
