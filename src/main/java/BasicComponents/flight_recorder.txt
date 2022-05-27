@@ -1,2 +1,7 @@
 -----------------------------
-27.05.2022 16:40:33.531871
+27.05.2022 22:43:28.367569
+Battery usage level set to: L
+-----------------------------
+27.05.2022 22:43:28.368748
+main rotor switched on!
+left battery consumed till Cell L: 0 B: 0 H: 9

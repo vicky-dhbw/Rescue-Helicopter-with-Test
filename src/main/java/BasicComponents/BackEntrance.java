@@ -15,4 +15,8 @@ public class BackEntrance {
         isOpen=false;
         System.out.println("--> closing back doors..  ..II..");
     }
+
+    public boolean getIsOpen(){
+        return isOpen;
+    }
 }

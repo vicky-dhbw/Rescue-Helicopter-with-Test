@@ -14,4 +14,8 @@ public class AntiCollisionLight {
         isOn=false;
         System.out.println("Anti collision light switched off!");
     }
+
+    public boolean getIsOn(){
+        return isOn;
+    }
 }

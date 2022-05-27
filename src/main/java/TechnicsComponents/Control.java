@@ -2,7 +2,7 @@ package TechnicsComponents;
 
 public class Control {
 
-    private BatteryManagement batteryManagement = BatteryManagement.B;
+    private BatteryManagement batteryManagement;
 
     Energy energy;
 
@@ -23,9 +23,8 @@ public class Control {
         System.out.println("Battery usage level set to: "+batteryManagement );
     }
     public void useBatteries(int RPM) {
-        int energyAmount;
-        //energyAmount = RPM*600
-        energyAmount=7;
+        int energyAmount= 10;
+
         switch (batteryManagement) {
             case B -> useBothBatteries(energyAmount);
             case L -> useLeftBattery(energyAmount);
@@ -46,15 +45,17 @@ public class Control {
                     energy.getLeftBattery().getCells()[i][j][k].dischargeCell();
                     countAmount++;
                 }
-                leftJ=j;
                 if(countAmount==energyAmount){
                     break;
                 }
+                leftJ=j;
+
             }
-            leftI=i;
             if(countAmount==energyAmount){
                 break;
             }
+            leftI=i;
+
         }
         System.out.println("left battery consumed till Cell L: "+leftI+ " B: "+ leftJ+ " H: "+leftK);
         leftK=tempK;
@@ -107,6 +108,20 @@ public class Control {
         useLeftBattery(oneMore);  //default extra unit used from left battery
         useRightBattery(energyAmountPerBattery);
 
+    }
+
+    public BatteryManagement getBatteryManagement(){
+        return batteryManagement;
+    }
+
+    public int[] getLeftIJK(){
+
+        int[] IJK=new int[3];
+        IJK[0]=leftI;
+        IJK[1]=leftJ;
+        IJK[2]=leftK;
+
+        return IJK;
     }
 
 }

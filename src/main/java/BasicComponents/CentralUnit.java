@@ -77,6 +77,7 @@ public class CentralUnit implements CyclicStick, CollectivePitchControl, Switch,
 
     @Override
     public void switchMainRotorOn() {
+
         recordAndPrint();
 
         if(!mainRotor.getIsOn()){

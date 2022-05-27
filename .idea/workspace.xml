@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="test cyclic stick done">
+    <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="test collective pitch passed&#10;test antiTorque pedals passed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/LandingLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/LandingLight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/MainRotor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/MainRotor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/AntiCollisionLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/AntiCollisionLight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/BackEntrance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/BackEntrance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/CentralUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/CentralUnit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/RescueHelicopter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/RescueHelicopter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/TailRotor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/TailRotor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/flight_recorder.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/flight_recorder.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Builder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Staff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TechnicsComponents/Battery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TechnicsComponents/Battery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +128,7 @@
       <workItem from="1653628584105" duration="11621000" />
       <workItem from="1653646390209" duration="2686000" />
       <workItem from="1653651047082" duration="30000" />
-      <workItem from="1653659777609" duration="2652000" />
+      <workItem from="1653659777609" duration="8874000" />
     </task>
     <task id="LOCAL-00001" summary="new with Test">
       <created>1653479299619</created>
@@ -189,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653649319461</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="test collective pitch passed&#10;test antiTorque pedals passed">
+      <created>1653662516832</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1653662516832</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,7 +225,8 @@
     <MESSAGE value="id works for pilot" />
     <MESSAGE value="patient is in TransportUnit, pilots are in cockpit, &#10;Doctor and paramedic are in cabin...they are at their seats" />
     <MESSAGE value="test cyclic stick done" />
-    <option name="LAST_COMMIT_MESSAGE" value="test cyclic stick done" />
+    <MESSAGE value="test collective pitch passed&#10;test antiTorque pedals passed" />
+    <option name="LAST_COMMIT_MESSAGE" value="test collective pitch passed&#10;test antiTorque pedals passed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -266,18 +278,66 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
-          <line>118</line>
+          <line>119</line>
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
-          <line>119</line>
-          <option name="timeStamp" value="69" />
+          <url>file://$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
-          <line>120</line>
-          <option name="timeStamp" value="70" />
+          <url>file://$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java</url>
+          <line>33</line>
+          <properties class="TechnicsComponents.Control" method="useLeftBattery">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java</url>
+          <line>94</line>
+          <properties class="TechnicsComponents.Control" method="useBothBatteries">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="80" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

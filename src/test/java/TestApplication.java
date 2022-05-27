@@ -1,8 +1,10 @@
 import BasicComponents.Manufacturer;
 import BasicComponents.RescueHelicopter;
 import CockpitComponents.Directions;
+import TechnicsComponents.BatteryManagement;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
+
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 
@@ -90,6 +92,35 @@ public class TestApplication {
     public void SwitchesWork(){
         rescueHelicopter.getCockpitRight().getControl_panel().switchOnOffLandingLight(true);
         assertTrue(rescueHelicopter.getLandingLight().getIsOn());
+
+
+        rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffAntiCollisionLight(false);
+        assertFalse(rescueHelicopter.getAntiCollisionLight().getIsOn());
+
+        rescueHelicopter.getCockpitLeft().getControl_panel().openCloseBackEntrance(true);
+        assertTrue(rescueHelicopter.getBackEntrance().getIsOpen());
+
+        rescueHelicopter.getCockpitRight().getControl_panel().switchOnOffMainRotor(true);
+        assertTrue(rescueHelicopter.getMainMotor().getIsOn());
+
+        rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffTailRotor(false);
+        assertFalse(rescueHelicopter.getTailRotor().getIsOn());
+
+        BatteryManagement batteryManagement=BatteryManagement.L;
+        rescueHelicopter.getCockpitRight().getControl_panel().changeEnergyUsage(BatteryManagement.L);
+        assertEquals(batteryManagement,rescueHelicopter.getTechnics().getControl().getBatteryManagement());
+
+    }
+
+    @Test
+    @Order(6)
+    public void checkBatteryManagement(){
+
+        rescueHelicopter.getCockpitRight().getControl_panel().changeEnergyUsage(BatteryManagement.L);
+        rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffMainRotor(true);
+        int[] expectedIJK=new int[]{1,19,0};
+        assertArrayEquals(expectedIJK, rescueHelicopter.getTechnics().getControl().getLeftIJK());
+
     }
 
 
