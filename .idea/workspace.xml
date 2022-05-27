@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="Human correction with class Patient extends Human">
-      <change afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/IDCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/SpecialIDCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Staff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/TypeValidation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="comments added to my droneComponents!" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,22 +15,13 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Enum" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Berni" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -49,14 +34,13 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/vickysharma/Desktop/Java Projects/Rescue-Helicopter-withTest&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
   <component name="RunManager">
@@ -69,6 +53,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Builder" />
         <item itemvalue="Application.Builder" />
       </list>
     </recent_temporary>
@@ -85,8 +70,9 @@
       <workItem from="1653479105123" duration="11000" />
       <workItem from="1653479160087" duration="29000" />
       <workItem from="1653479203378" duration="427000" />
-      <workItem from="1653489629609" duration="19970000" />
-      <workItem from="1653555439620" duration="22917000" />
+      <workItem from="1653501132240" duration="1145000" />
+      <workItem from="1653504865596" duration="2928000" />
+      <workItem from="1653549645553" duration="3626000" />
     </task>
     <task id="LOCAL-00001" summary="new with Test">
       <created>1653479299619</created>
@@ -95,49 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653479299619</updated>
     </task>
-    <task id="LOCAL-00002" summary="Human">
-      <created>1653502415085</created>
+    <task id="LOCAL-00002" summary="comments added to my droneComponents!">
+      <created>1653552890241</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1653502415085</updated>
+      <updated>1653552890241</updated>
     </task>
-    <task id="LOCAL-00003" summary="Human finished">
-      <created>1653505983020</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1653505983020</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Human finished also with method choke">
-      <created>1653511778303</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1653511778303</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Human correction of mistakes.">
-      <created>1653565440014</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1653565440014</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Human correction with option isInvected for the patient">
-      <created>1653576096040</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1653576096040</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Human correction with class Patient extends Human">
-      <created>1653581179238</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1653581179238</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,48 +107,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new with Test" />
-    <MESSAGE value="Human" />
-    <MESSAGE value="Human finished" />
-    <MESSAGE value="Human finished also with method choke" />
-    <MESSAGE value="Human correction of mistakes." />
-    <MESSAGE value="Human correction with option isInvected for the patient" />
-    <MESSAGE value="Human correction with class Patient extends Human" />
-    <option name="LAST_COMMIT_MESSAGE" value="Human correction with class Patient extends Human" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="103" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="104" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="105" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="106" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="107" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="108" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="comments added to my droneComponents" />
+    <MESSAGE value="comments added to my droneComponents!" />
+    <option name="LAST_COMMIT_MESSAGE" value="comments added to my droneComponents!" />
   </component>
 </project>
