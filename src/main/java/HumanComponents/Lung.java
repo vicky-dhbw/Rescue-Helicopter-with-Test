@@ -31,6 +31,7 @@ public class Lung {
     public int getNumberOfInfectedCells(){
         return numberOfInfectedCells;
     }
+
     public void setDamagedCells(){
         int positioni = new Random().nextInt(50);
         int positionj = new Random().nextInt(20);
@@ -41,6 +42,8 @@ public class Lung {
             setDamagedCells();
         }
     }
+
+
     public void setCells(){
         if(smoker){
             numberOfDamagedCells = numberOfCells/5; //20 percent are damaged if smoker is true

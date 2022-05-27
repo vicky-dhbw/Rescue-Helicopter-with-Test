@@ -14,8 +14,8 @@ public class Builder {
     public static void main(String[] args) throws FileNotFoundException {
         int i=0;
 
-        Human notSmoker = new Human(false, false);
-        Human smoker = new Human(false,  true);
+      /*  Human notSmoker = new Human(false, false);
+       Human smoker = new Human(false,  true);
         Patient patientNotSmoker = new Patient(false);
         Patient patientSmoker = new Patient(true);
         patientSmoker.breatheIn();
@@ -113,11 +113,12 @@ public class Builder {
         notSmoker.breatheIn();
         smoker.breatheIn();
         notSmoker.breatheOut();
-        smoker.breatheOut();
+        smoker.breatheOut();*/
+
         RescueHelicopter rescueHelicopter=new RescueHelicopter(Manufacturer.AIRBUS);
-        rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffMainRotor(true);
-        rescueHelicopter.getCockpitLeft().getControl_panel().setDroneFree();
         rescueHelicopter.getCockpitLeft().getControl_panel().changeEnergyUsage(BatteryManagement.L);
+        rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffMainRotor(true);
+        rescueHelicopter.getCockpitLeft().getControl_panel().setDroneFree();     //Note: the drone loads all sections in storage after it detaches
         rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffMainRotor(true);
         rescueHelicopter.getCockpitLeft().getControl_panel().changeEnergyUsage(BatteryManagement.B);
         rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffMainRotor(false);

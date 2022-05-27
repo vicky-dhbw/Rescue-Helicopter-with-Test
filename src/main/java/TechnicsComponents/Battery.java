@@ -3,9 +3,7 @@ package TechnicsComponents;
 public class Battery {
 
     private final Cell[][][] cells;
-    private int countI;
-    private int countJ;
-    private int countK;
+
     public Battery() {
         cells= new Cell[250][100][50];
         for(int i=0; i<250; i++) {
