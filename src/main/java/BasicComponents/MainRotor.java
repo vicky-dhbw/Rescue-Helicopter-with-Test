@@ -67,5 +67,17 @@ public class MainRotor extends Rotor {
         System.out.println("helicopter going " + direction+" with a speed of "+ speed+ " km/h ....");
 
     }
+
+    public double getSpeed(){
+        return speed;
+    }
+
+    public int getAngleRotorBlades(){
+        return angleRotorBlades;
+    }
+
+    public Directions getDirection(){
+        return direction;
+    }
 }
 

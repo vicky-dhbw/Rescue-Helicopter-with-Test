@@ -30,6 +30,9 @@ public class RescueHelicopter {
 
     AntiCollisionLight antiCollisionLight=new AntiCollisionLight();
 
+    MainRotor mainRotor;
+    TailRotor tailRotor;
+    Technics technics;
 
 
 
@@ -41,12 +44,11 @@ public class RescueHelicopter {
 
         this.manufacturer=manufacturer;
         serialNumber= UUID.randomUUID();
-
-        MainRotor mainRotor = new MainRotor();
-        TailRotor tailRotor = new TailRotor();
-        Technics technics = new Technics();
         blackBox=new BlackBox();
         drone=new Drone();
+        mainRotor = new MainRotor();
+        tailRotor = new TailRotor();
+        technics = new Technics();
         final Pilot pilot1=new Pilot();
         final Pilot pilot2=new Pilot();
         EmergencyDoctor emergencyDoctor = new EmergencyDoctor();
@@ -86,6 +88,22 @@ public class RescueHelicopter {
 
     public CentralUnit getCentralUnit(){
         return centralUnit;
+    }
+
+    public MainRotor getMainMotor(){
+        return mainRotor;
+    }
+
+    public TailRotor getTailRotor(){
+        return tailRotor;
+    }
+
+    public Technics getTechnics(){
+        return technics;
+    }
+
+    public Drone getDrone(){
+        return drone;
     }
 
 }
