@@ -1,5 +1,7 @@
 package HumanComponents;
 
+import java.util.Random;
+
 public abstract class Human {
     private String firstName;
     private String secondName;
@@ -13,9 +15,9 @@ public abstract class Human {
     private boolean lungsAreFilled;
     private final boolean isInfected;
 
-    public Human(boolean isInfected, boolean smoker) {
+    public Human(boolean isInfected) {
 
-        this.smoker = smoker;
+        this.smoker = new Random().nextBoolean();
         this.isInfected = isInfected;
         leftLung = new Lung(smoker, isInfected);
         rightLung = new Lung(smoker, isInfected);

@@ -2,6 +2,9 @@ package CabinComponents;
 import BasicComponents.BackEntrance;
 import CockpitComponents.Seat;
 import Configuration.*;
+import HumanComponents.EmergencyDoctor;
+import HumanComponents.Paramedic;
+import HumanComponents.Patient;
 
 public class Cabin {
 
@@ -10,7 +13,16 @@ public class Cabin {
 
     private final SlidingDoors slidingDoors=new SlidingDoors();
 
-    private TransportUnit transportUnit=new TransportUnit();
+    private final TransportUnit transportUnit;
 
+    public Cabin(EmergencyDoctor emergencyDoctor, Paramedic paramedic, Patient patient) {
 
+        transportUnit=new TransportUnit(patient);
+        seats[0]=new Seat(paramedic);
+        seats[1]=new Seat(emergencyDoctor);
+    }
+
+    public TransportUnit getTransportUnit() {
+        return transportUnit;
+    }
 }

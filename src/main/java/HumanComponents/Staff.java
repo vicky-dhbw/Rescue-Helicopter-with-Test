@@ -5,7 +5,7 @@ public class Staff extends Human{
     public IDCard idCard;
 
     public Staff(){
-        super(false, false);//no cells are damaged
+        super(false);//no cells are damaged
     }
 
     public IDCard getIdCard() {

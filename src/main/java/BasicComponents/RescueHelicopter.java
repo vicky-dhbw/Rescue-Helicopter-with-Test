@@ -1,5 +1,6 @@
 package BasicComponents;
 
+import CabinComponents.Cabin;
 import DroneComponents.*;
 import CockpitComponents.Cockpit;
 import Configuration.Position;
@@ -14,19 +15,14 @@ public class RescueHelicopter {
     private final UUID serialNumber;
     private final Manufacturer manufacturer;
 
-    private final MainRotor mainRotor;
-    private final TailRotor tailRotor;
-
-    private final Technics technics;
-
     private final CentralUnit centralUnit;
 
     public final BlackBox blackBox;
 
     private final Drone drone;
 
-    Cockpit cockpitLeft;
-    Cockpit cockpitRight;
+    private final Cockpit cockpitLeft;
+    private final Cockpit cockpitRight;
 
     BackEntrance backEntrance=new BackEntrance();
 
@@ -34,14 +30,11 @@ public class RescueHelicopter {
 
     AntiCollisionLight antiCollisionLight=new AntiCollisionLight();
 
-    private final Pilot pilot1=new Pilot();
-    private final Pilot pilot2=new Pilot();
 
-    private Patient patient;
 
-    private final Paramedic paramedic=new Paramedic();
 
-    private final EmergencyDoctor emergencyDoctor=new EmergencyDoctor();
+
+    private final Cabin cabin;
 
 
     public RescueHelicopter(Manufacturer manufacturer){
@@ -49,16 +42,23 @@ public class RescueHelicopter {
         this.manufacturer=manufacturer;
         serialNumber= UUID.randomUUID();
 
-        mainRotor=new MainRotor();
-        tailRotor=new TailRotor();
-        technics=new Technics();
+        MainRotor mainRotor = new MainRotor();
+        TailRotor tailRotor = new TailRotor();
+        Technics technics = new Technics();
         blackBox=new BlackBox();
         drone=new Drone();
+        final Pilot pilot1=new Pilot();
+        final Pilot pilot2=new Pilot();
+        EmergencyDoctor emergencyDoctor = new EmergencyDoctor();
+        Paramedic paramedic = new Paramedic();
+        Patient patient=new Patient();
+
+        cabin=new Cabin(emergencyDoctor, paramedic,patient);
 
 
-        centralUnit=new CentralUnit(drone,blackBox,technics,mainRotor, tailRotor,backEntrance, landingLight, antiCollisionLight);
-        cockpitLeft=new Cockpit(Position.LEFT, centralUnit);
-        cockpitRight=new Cockpit(Position.RIGHT, centralUnit);
+        centralUnit=new CentralUnit(drone,blackBox, technics, mainRotor, tailRotor,backEntrance, landingLight, antiCollisionLight);
+        cockpitLeft=new Cockpit(Position.LEFT, centralUnit,pilot1);
+        cockpitRight=new Cockpit(Position.RIGHT, centralUnit,pilot2);
 
 
     }
@@ -72,15 +72,20 @@ public class RescueHelicopter {
     }
 
 
-    public Pilot getPilot1() {
-        return pilot1;
+    public UUID getSerialNumber() {
+        return serialNumber;
     }
 
-    public Pilot getPilot2() {
-        return pilot2;
+    public Manufacturer getManufacturer() {
+        return manufacturer;
     }
 
-    public Patient getPatient() {
-        return patient;
+    public Cabin getCabin(){
+        return cabin;
     }
+
+    public CentralUnit getCentralUnit(){
+        return centralUnit;
+    }
+
 }

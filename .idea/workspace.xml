@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="Human finished also with method choke">
+    <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="patient is in TransportUnit, pilots are in cockpit, &#10;Doctor and paramedic are in cabin...they are at their seats">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/RescueHelicopter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/RescueHelicopter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/flight_recorder.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/flight_recorder.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/EmergencyDoctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/EmergencyDoctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Paramedic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Paramedic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Pilot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Pilot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/SpecialIDCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/SpecialIDCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Builder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CabinComponents/Cabin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CabinComponents/Cabin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CabinComponents/TransportUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CabinComponents/TransportUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CockpitComponents/Cockpit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CockpitComponents/Cockpit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CockpitComponents/Seat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CockpitComponents/Seat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Patient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Staff.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +101,7 @@
       <workItem from="1653479203378" duration="427000" />
       <workItem from="1653489629609" duration="19970000" />
       <workItem from="1653555439620" duration="9864000" />
-      <workItem from="1653628584105" duration="1869000" />
+      <workItem from="1653628584105" duration="7567000" />
     </task>
     <task id="LOCAL-00001" summary="new with Test">
       <created>1653479299619</created>
@@ -141,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653603969772</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="id works for pilot">
+      <created>1653630570945</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1653630570945</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,7 +174,9 @@
     <MESSAGE value="Human" />
     <MESSAGE value="Human finished" />
     <MESSAGE value="Human finished also with method choke" />
-    <option name="LAST_COMMIT_MESSAGE" value="Human finished also with method choke" />
+    <MESSAGE value="id works for pilot" />
+    <MESSAGE value="patient is in TransportUnit, pilots are in cockpit, &#10;Doctor and paramedic are in cabin...they are at their seats" />
+    <option name="LAST_COMMIT_MESSAGE" value="patient is in TransportUnit, pilots are in cockpit, &#10;Doctor and paramedic are in cabin...they are at their seats" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -217,6 +230,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
           <line>118</line>
           <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
+          <line>119</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
+          <line>120</line>
+          <option name="timeStamp" value="70" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
