@@ -12,9 +12,10 @@ public class SpecialIDCard extends IDCard{
 
     private LicenceType licenceType;
 
-    public SpecialIDCard(IDCard idCard){
+    public SpecialIDCard(){
         super();
         setLicenceType();
+        setTypeValidation();
 
     }
 
@@ -22,8 +23,9 @@ public class SpecialIDCard extends IDCard{
         return typeValidation;
     }
 
-    public void setTypeValidation(TypeValidation typeValidation){
-        this.typeValidation=typeValidation;
+    public void setTypeValidation(){
+        int pick = new Random().nextInt(TypeValidation.values().length);
+        typeValidation= TypeValidation.values()[pick];
     }
 
 
