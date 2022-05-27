@@ -22,6 +22,8 @@ public class CentralUnit implements CyclicStick, CollectivePitchControl, Switch,
 
     public final BlackBox blackBox;
 
+    private BatteryManagement batteryManagement;
+
     PrintStream console=System.out;
 
     public CentralUnit(Drone drone, BlackBox blackBox, Technics technics, MainRotor mainRotor, TailRotor tailRotor, BackEntrance backEntrance, LandingLight landingLight, AntiCollisionLight antiCollisionLight) {

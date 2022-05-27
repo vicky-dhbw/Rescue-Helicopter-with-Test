@@ -1,7 +1,9 @@
 import BasicComponents.Manufacturer;
 import BasicComponents.RescueHelicopter;
 import CockpitComponents.Directions;
+import TechnicsComponents.Battery;
 import TechnicsComponents.BatteryManagement;
+import TechnicsComponents.Cell;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -116,10 +118,33 @@ public class TestApplication {
     @Order(6)
     public void checkBatteryManagement(){
 
-        rescueHelicopter.getCockpitRight().getControl_panel().changeEnergyUsage(BatteryManagement.L);
         rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffMainRotor(true);
-        int[] expectedIJK=new int[]{1,19,0};
-        assertArrayEquals(expectedIJK, rescueHelicopter.getTechnics().getControl().getLeftIJK());
+        //rescueHelicopter.getCockpitRight().getControl_panel().changeEnergyUsage(BatteryManagement.L);
+        int counter=0;
+
+        Cell[][][] cellLeft=rescueHelicopter.getTechnics().getEnergy().getLeftBattery().getCells();
+        Cell[][][] cellRight=rescueHelicopter.getTechnics().getEnergy().getRightBattery().getCells();
+
+        for(int i=0;i<250;i++){
+            for(int j=0;j<100;j++){
+                for(int k=0;k<50;k++){
+                    if(!cellLeft[i][j][k].getIsCharged()){
+                        counter++;
+                    }
+                }
+            }
+        }
+
+        for(int i=0;i<250;i++){
+            for(int j=0;j<100;j++){
+                for(int k=0;k<50;k++){
+                    if(!cellRight[i][j][k].getIsCharged()){
+                        counter++;
+                    }
+                }
+            }
+        }
+      assertEquals(6000,counter);
 
     }
 

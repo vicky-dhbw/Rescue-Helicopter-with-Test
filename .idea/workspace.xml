@@ -6,14 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="test collective pitch passed&#10;test antiTorque pedals passed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/AntiCollisionLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/AntiCollisionLight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/BackEntrance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/BackEntrance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/CentralUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/CentralUnit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/RescueHelicopter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/RescueHelicopter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/flight_recorder.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/flight_recorder.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Builder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Staff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TechnicsComponents/Battery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TechnicsComponents/Battery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TechnicsComponents/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TechnicsComponents/Cell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestApplication.java" afterDir="false" />
     </list>
@@ -128,7 +123,7 @@
       <workItem from="1653628584105" duration="11621000" />
       <workItem from="1653646390209" duration="2686000" />
       <workItem from="1653651047082" duration="30000" />
-      <workItem from="1653659777609" duration="8874000" />
+      <workItem from="1653659777609" duration="13459000" />
     </task>
     <task id="LOCAL-00001" summary="new with Test">
       <created>1653479299619</created>
@@ -200,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653662516832</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="test collective pitch passed&#10;test antiTorque pedals passed">
+      <created>1653684262746</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1653684262746</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,6 +323,11 @@
           <line>29</line>
           <option name="timeStamp" value="81" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java</url>
           <line>33</line>
@@ -332,7 +339,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java</url>
-          <line>94</line>
+          <line>93</line>
           <properties class="TechnicsComponents.Control" method="useBothBatteries">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
