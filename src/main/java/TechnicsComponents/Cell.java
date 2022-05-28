@@ -4,14 +4,15 @@ public class Cell {
 
     private boolean isCharged;
 
-    public Cell(){
-        isCharged=true;
+    public Cell() {
+        isCharged = true;
     }
-    public void dischargeCell(){
+
+    public void dischargeCell() {
         isCharged = false;
     }
 
-    public boolean getIsCharged(){
+    public boolean getIsCharged() {
         return isCharged;
     }
 

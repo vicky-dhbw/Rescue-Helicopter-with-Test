@@ -1,19 +1,18 @@
 package BasicComponents;
-import CockpitComponents.*;
 
-public class LandingLight{
+public class LandingLight {
 
-    private boolean isOn=false;
+    private boolean isOn = false;
 
-    public void switchOn(){
-        isOn=true;
+    public void switchOn() {
+        isOn = true;
     }
 
-    public void switchOff(){
-        isOn=false;
+    public void switchOff() {
+        isOn = false;
     }
 
-    public boolean getIsOn(){
+    public boolean getIsOn() {
         return isOn;
     }
 }

@@ -1,11 +1,10 @@
 import BasicComponents.Manufacturer;
 import BasicComponents.RescueHelicopter;
 import CockpitComponents.Directions;
-import DroneComponents.Storage;
-import TechnicsComponents.Battery;
 import TechnicsComponents.BatteryManagement;
 import TechnicsComponents.Cell;
 import org.junit.jupiter.api.*;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 
@@ -16,8 +15,8 @@ public class TestApplication {
     RescueHelicopter rescueHelicopter;
 
     @BeforeEach
-    public void setUp(){
-        rescueHelicopter=new RescueHelicopter(Manufacturer.AIRBUS);
+    public void setUp() {
+        rescueHelicopter = new RescueHelicopter(Manufacturer.AIRBUS);
     }
 
     @Test
@@ -37,27 +36,27 @@ public class TestApplication {
     @Test
     @Order(2)
     @DisplayName("Main rotor properties must change accordingly..")
-    public void CyclicStickWorks(){
+    public void CyclicStickWorks() {
 
         rescueHelicopter.getCockpitLeft().getCyclic_stick().tiltLeft(3);    //controlling rotor from leftCockpit
-        assertEquals(150.0,rescueHelicopter.getMainMotor().getSpeed());
-        assertEquals(3,rescueHelicopter.getMainMotor().getAngleRotorBlades());
+        assertEquals(150.0, rescueHelicopter.getMainMotor().getSpeed());
+        assertEquals(3, rescueHelicopter.getMainMotor().getAngleRotorBlades());
 
-        Directions expectedDirection=Directions.LEFT;
-        assertEquals(expectedDirection,rescueHelicopter.getMainMotor().getDirection());
+        Directions expectedDirection = Directions.LEFT;
+        assertEquals(expectedDirection, rescueHelicopter.getMainMotor().getDirection());
 
 
         rescueHelicopter.getCockpitRight().getCyclic_stick().tiltFront(5);    //controlling rotor from rightCockpit
-        assertEquals(250.0,rescueHelicopter.getMainMotor().getSpeed());
-        assertEquals(5,rescueHelicopter.getMainMotor().getAngleRotorBlades());
+        assertEquals(250.0, rescueHelicopter.getMainMotor().getSpeed());
+        assertEquals(5, rescueHelicopter.getMainMotor().getAngleRotorBlades());
 
-        Directions expectedDirection_=Directions.FORWARD;
-        assertEquals(expectedDirection_,rescueHelicopter.getMainMotor().getDirection());
+        Directions expectedDirection_ = Directions.FORWARD;
+        assertEquals(expectedDirection_, rescueHelicopter.getMainMotor().getDirection());
     }
 
     @Test
     @Order(3)
-    public void CollectivePitchWorks(){
+    public void CollectivePitchWorks() {
 
         //for right cockpit
         rescueHelicopter.getCockpitRight().getCollective_pitch_control().raiseCollectivePitchControl();
@@ -78,7 +77,7 @@ public class TestApplication {
 
     @Test
     @Order(4)
-    public void AntiTorquePedalsWorks(){
+    public void AntiTorquePedalsWorks() {
 
         //right cockpit
         rescueHelicopter.getCockpitRight().getAntiTorquePedalRight().increaseLift();
@@ -92,7 +91,7 @@ public class TestApplication {
 
     @Test
     @Order(5)
-    public void SwitchesWork(){
+    public void SwitchesWork() {
         rescueHelicopter.getCockpitRight().getControl_panel().switchOnOffLandingLight(true);
         assertTrue(rescueHelicopter.getLandingLight().getIsOn());
 
@@ -103,88 +102,87 @@ public class TestApplication {
         rescueHelicopter.getCockpitLeft().getControl_panel().openCloseBackEntrance(true);
         assertTrue(rescueHelicopter.getBackEntrance().getIsOpen());
 
-       rescueHelicopter.getCockpitRight().getControl_panel().switchOnOffMainRotor(true);
+        rescueHelicopter.getCockpitRight().getControl_panel().switchOnOffMainRotor(true);
         assertTrue(rescueHelicopter.getMainMotor().getIsOn());
 
         rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffTailRotor(false);
         assertFalse(rescueHelicopter.getTailRotor().getIsOn());
 
-        BatteryManagement batteryManagement=BatteryManagement.L;
+        BatteryManagement batteryManagement = BatteryManagement.L;
         rescueHelicopter.getCockpitRight().getControl_panel().changeEnergyUsage(BatteryManagement.L);
-        assertEquals(batteryManagement,rescueHelicopter.getTechnics().getControl().getBatteryManagement());
+        assertEquals(batteryManagement, rescueHelicopter.getTechnics().getControl().getBatteryManagement());
 
     }
 
     @Test
     @Order(6)
     @DisplayName("Battery Usage Test: a total of 6000 cells should be discharged in Energy containing left and right batteries... ")
-    public void checkBatteryUsage(){
+    public void checkBatteryUsage() {
 
         // the rpm=600 * 10 Battery units= 6000;
         rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffMainRotor(true);
-       int counter=0;
+        int counter = 0;
 
-        Cell[][][] cellLeft=rescueHelicopter.getTechnics().getEnergy().getLeftBattery().getCells();
-        Cell[][][] cellRight=rescueHelicopter.getTechnics().getEnergy().getRightBattery().getCells();
+        Cell[][][] cellLeft = rescueHelicopter.getTechnics().getEnergy().getLeftBattery().getCells();
+        Cell[][][] cellRight = rescueHelicopter.getTechnics().getEnergy().getRightBattery().getCells();
 
-        for(int i=0;i<250;i++){
-            for(int j=0;j<100;j++){
-                for(int k=0;k<50;k++){
-                    if(!cellLeft[i][j][k].getIsCharged()){
+        for (int i = 0; i < 250; i++) {
+            for (int j = 0; j < 100; j++) {
+                for (int k = 0; k < 50; k++) {
+                    if (!cellLeft[i][j][k].getIsCharged()) {
                         counter++;
                     }
                 }
             }
         }
 
-        for(int i=0;i<250;i++){
-            for(int j=0;j<100;j++){
-                for(int k=0;k<50;k++){
-                    if(!cellRight[i][j][k].getIsCharged()){
+        for (int i = 0; i < 250; i++) {
+            for (int j = 0; j < 100; j++) {
+                for (int k = 0; k < 50; k++) {
+                    if (!cellRight[i][j][k].getIsCharged()) {
                         counter++;
                     }
                 }
             }
         }
-      assertEquals(6000,counter);
+        assertEquals(6000, counter);
 
     }
 
     @Test
     @Order(7)
     @DisplayName("individual testing left battery..")
-    public void checkBatteryRegulate(){
+    public void checkBatteryRegulate() {
 
-        BatteryManagement batteryManagement=BatteryManagement.L;
+        BatteryManagement batteryManagement = BatteryManagement.L;
         rescueHelicopter.getCockpitLeft().getControl_panel().changeEnergyUsage(BatteryManagement.L);
 
-        int counter=0;
+        int counter = 0;
 
-        Cell[][][] cellLeft=rescueHelicopter.getTechnics().getEnergy().getLeftBattery().getCells();
+        Cell[][][] cellLeft = rescueHelicopter.getTechnics().getEnergy().getLeftBattery().getCells();
 
-        for(int i=0;i<250;i++){
-            for(int j=0;j<100;j++){
-                for(int k=0;k<50;k++){
-                    if(!cellLeft[i][j][k].getIsCharged()){
+        for (int i = 0; i < 250; i++) {
+            for (int j = 0; j < 100; j++) {
+                for (int k = 0; k < 50; k++) {
+                    if (!cellLeft[i][j][k].getIsCharged()) {
                         counter++;
                     }
                 }
             }
         }
 
-        assertEquals(6000,counter);
-        assertEquals(batteryManagement,rescueHelicopter.getTechnics().getControl().getBatteryManagement());
+        assertEquals(6000, counter);
+        assertEquals(batteryManagement, rescueHelicopter.getTechnics().getControl().getBatteryManagement());
 
     }
 
     @Test
     @Order(8)
-    public void checkDrone(){
+    public void checkDrone() {
 
         rescueHelicopter.getCockpitRight().getControl_panel().setDroneFree();
         assertTrue(rescueHelicopter.getDrone().getDroneCentralUnit().searchHuman());
     }
-
 
 
 }

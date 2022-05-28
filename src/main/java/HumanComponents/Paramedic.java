@@ -1,8 +1,8 @@
 package HumanComponents;
 
-public class Paramedic extends Staff{
+public class Paramedic extends Staff {
 
-    public Paramedic(){
-        idCard=new IDCard();
+    public Paramedic() {
+        idCard = new IDCard();
     }
 }

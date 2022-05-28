@@ -1,6 +1,7 @@
 package CockpitComponents;
-import BasicComponents.*;
-import Configuration.*;
+
+import BasicComponents.CentralUnit;
+import Configuration.Position;
 import HumanComponents.Pilot;
 
 public class Cockpit {
@@ -17,38 +18,39 @@ public class Cockpit {
 
 
     private final Control_Panel control_panel;
-    public Cockpit(Position position, CentralUnit centralUnit, Pilot pilot){
-        this.position=position;
-        entrance=new Entrance();
-        seat=new Seat(pilot);
-        display=new Display();
-        cyclic_stick=centralUnit;
-        collective_pitch_control=centralUnit;
 
-        control_panel=new Control_Panel(centralUnit);
-        antiTorquePedalLeft=centralUnit;
-        antiTorquePedalRight=centralUnit;
+    public Cockpit(Position position, CentralUnit centralUnit, Pilot pilot) {
+        this.position = position;
+        entrance = new Entrance();
+        seat = new Seat(pilot);
+        display = new Display();
+        cyclic_stick = centralUnit;
+        collective_pitch_control = centralUnit;
+
+        control_panel = new Control_Panel(centralUnit);
+        antiTorquePedalLeft = centralUnit;
+        antiTorquePedalRight = centralUnit;
 
 
     }
 
-    public Control_Panel getControl_panel(){
+    public Control_Panel getControl_panel() {
         return control_panel;
     }
 
-    public CollectivePitchControl getCollective_pitch_control(){
+    public CollectivePitchControl getCollective_pitch_control() {
         return collective_pitch_control;
     }
 
-    public CyclicStick getCyclic_stick(){
+    public CyclicStick getCyclic_stick() {
         return cyclic_stick;
     }
 
-    public AntiTorquePedalLeft getAntiTorquePedalLeft(){
+    public AntiTorquePedalLeft getAntiTorquePedalLeft() {
         return antiTorquePedalLeft;
     }
 
-    public AntiTorquePedalRight getAntiTorquePedalRight(){
+    public AntiTorquePedalRight getAntiTorquePedalRight() {
         return antiTorquePedalRight;
     }
 }

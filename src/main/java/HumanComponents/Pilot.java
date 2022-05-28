@@ -1,11 +1,9 @@
 package HumanComponents;
 
-import java.util.Date;
+public class Pilot extends Staff {
 
-public class Pilot extends Staff{
-
-    public Pilot(){
-        idCard= (IDCard) new SpecialIDCard();
+    public Pilot() {
+        idCard = new SpecialIDCard();
 
     }
 }

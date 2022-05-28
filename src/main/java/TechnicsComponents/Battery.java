@@ -5,17 +5,17 @@ public class Battery {
     private final Cell[][][] cells;
 
     public Battery() {
-        cells= new Cell[250][100][50];
-        for(int i=0; i<250; i++) {
+        cells = new Cell[250][100][50];
+        for (int i = 0; i < 250; i++) {
             for (int j = 0; j < 100; j++) {
                 for (int k = 0; k < 50; k++) {
-                    cells[i][j][k]=new Cell();
+                    cells[i][j][k] = new Cell();
                 }
             }
         }
     }
 
-    public Cell[][][] getCells(){
+    public Cell[][][] getCells() {
         return cells;
     }
 }

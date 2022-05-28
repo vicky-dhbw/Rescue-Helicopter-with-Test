@@ -1,29 +1,28 @@
 package DroneComponents;
-import Configuration.*;
 
-import java.util.Arrays;
-import java.util.Random;
+import Configuration.Configuration;
 
 public class DroneCentralUnit {
 
-    private Camera camera;
-    private Storage storage;
+    private final Camera camera;
+    private final Storage storage;
 
     //since drone central unit must control the camera and storage, the two are given as parameter in default constructor
     public DroneCentralUnit(Camera camera, Storage storage) {
-        this.camera=camera;
-        this.storage=storage;
+        this.camera = camera;
+        this.storage = storage;
     }
 
-    public void switchOnCamera(){
+    public void switchOnCamera() {
         camera.setIsOn(true);
         System.out.println("Camera switched on..");
         storage.loadContent();                                //when the camera is switched on the contents are loaded...
-                                                             // Note loadContent has both setContent and placeHuman methods
+        // Note loadContent has both setContent and placeHuman methods
         searchHuman();                                      //after loading contents off all sections of the landscape...
-                                                           // the drone searches for "human" placed in a random section in random coordinates
+        // the drone searches for "human" placed in a random section in random coordinates
     }
-    public void switchOffCamera(){
+
+    public void switchOffCamera() {
         camera.setIsOn(false);
         System.out.println("Camera switched off..");
 
@@ -67,11 +66,11 @@ public class DroneCentralUnit {
         return false;
     }
 
-    public Camera getCamera(){
+    public Camera getCamera() {
         return camera;
     }
 
-    public Storage getStorage(){
+    public Storage getStorage() {
         return storage;
     }
 }

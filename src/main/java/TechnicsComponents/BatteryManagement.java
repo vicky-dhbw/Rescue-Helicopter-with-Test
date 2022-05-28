@@ -1,9 +1,9 @@
 package TechnicsComponents;
 
-public enum BatteryManagement{
+public enum BatteryManagement {
 
     L,
     B,
-    R;
+    R
 
 }

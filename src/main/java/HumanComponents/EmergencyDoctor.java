@@ -1,8 +1,8 @@
 package HumanComponents;
 
-public class EmergencyDoctor extends Staff{
+public class EmergencyDoctor extends Staff {
 
-public EmergencyDoctor(){
-    idCard=new IDCard();
-}
+    public EmergencyDoctor() {
+        idCard = new IDCard();
+    }
 }

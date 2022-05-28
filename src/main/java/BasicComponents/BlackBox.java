@@ -1,5 +1,7 @@
 package BasicComponents;
-import Configuration.*;
+
+import Configuration.Configuration;
+
 import java.io.PrintStream;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -12,22 +14,21 @@ public class BlackBox {
 
     public String localDateTimeString;
 
-    public  BlackBox(){
+    public BlackBox() {
         try {
-            stream=new PrintStream(Configuration.INSTANCE.filename);
-        }
-        catch (Exception e){
+            stream = new PrintStream(Configuration.INSTANCE.filename);
+        } catch (Exception e) {
             e.getStackTrace();
         }
         dateTimeFormatter = DateTimeFormatter.ofPattern(Configuration.INSTANCE.dateTimeFormat);
     }
 
-    public String getLocalDateTime(){
-        localDateTime=LocalDateTime.now();
-        return localDateTimeString=dateTimeFormatter.format(localDateTime);
+    public String getLocalDateTime() {
+        localDateTime = LocalDateTime.now();
+        return localDateTimeString = dateTimeFormatter.format(localDateTime);
     }
 
-    public void streamToFile(){
+    public void streamToFile() {
         System.setOut(stream);
     }
 
