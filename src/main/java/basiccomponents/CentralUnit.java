@@ -34,7 +34,7 @@ public class CentralUnit implements CyclicStick, CollectivePitchControl, Switch,
         this.drone = drone;
         this.droneCentralUnit = drone.getDroneCentralUnit();
     }
-
+    //raiseCollectivePitchControl is used to change the boolean raise of MainRotor.
     @Override
     public void raiseCollectivePitchControl() {
         recordAndPrint();
@@ -50,7 +50,8 @@ public class CentralUnit implements CyclicStick, CollectivePitchControl, Switch,
         System.out.println("decreasing pitch angle of Main Rotor...");
         System.out.println("--> sinking helicopter....");
     }
-
+    //The functions of CyclicStick tiltLeft, tiltRight, tiltFront and tiltBack are implemented.
+    // It changes the angleRotorBlades and Direction of MainRotor.
     @Override
     public void tiltLeft(int degree) {
         recordAndPrint();
@@ -78,7 +79,8 @@ public class CentralUnit implements CyclicStick, CollectivePitchControl, Switch,
         mainRotor.tiltBack(degree);
     }
 
-
+    //switchMainRotorOn/Off changes the boolean isOn of MainRotor.
+    // Only when switching on the MainRotor takes 600 RPM of the Batteries.
     @Override
     public void switchMainRotorOn() {
 
@@ -103,7 +105,8 @@ public class CentralUnit implements CyclicStick, CollectivePitchControl, Switch,
         }
 
     }
-
+    //switchTailRotorOn/Off changes the boolean isOn of TailRotor.
+    // Only when switching on the TailRotor takes 600 RPM of the Batteries.
     @Override
     public void switchTailRotorOn() {
         recordAndPrint();
@@ -116,7 +119,6 @@ public class CentralUnit implements CyclicStick, CollectivePitchControl, Switch,
         recordAndPrint();
         tailRotor.switchOff();
     }
-
     @Override
     public void openBackEntrance() {
         recordAndPrint();
