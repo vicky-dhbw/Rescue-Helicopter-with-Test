@@ -2,12 +2,12 @@ package technicscomponents;
 
 public class Control {
 
-    private static int leftI;
-    private static int leftJ;
-    private static int leftK;
-    private static int rightI;
-    private static int rightJ;
-    private static int rightK;
+    static int leftI;
+    static int leftJ;
+    static int leftK;
+    static int rightI;
+    static int rightJ;
+    static int rightK;
 
     //all the variable above stores the information of the last discharged cell coordinates for loop optimization
     private static int countAmount;
@@ -31,7 +31,7 @@ public class Control {
     }
 
     public void useBatteries(int RPM) {
-        int energyAmount = RPM * 10;
+        int energyAmount = RPM*10;
 
         switch (batteryManagement) {
             case B -> useBothBatteries(energyAmount);
@@ -42,6 +42,7 @@ public class Control {
 
     public void useLeftBattery(int energyAmount) {
 
+
         for (int i = leftI; i < 250; i++) {
             for (int j = leftJ; j < 100; j++) {
                 for (int k = leftK; k < 50; k++) {
@@ -49,24 +50,22 @@ public class Control {
                         leftI = i;
                         leftJ = j;
                         leftK = k;
-                        break;
+                        System.out.println("left battery consumed till Cell L: " + leftI + " B: " + leftJ + " H: " + (leftK));
+                        countAmount = 0;    //countAmount is a helping variable set to zero at the end
+                        return;
                     } else {
-                        energy.getLeftBattery().getCells()[i][j][k].dischargeCell();
                         countAmount++;
+                        energy.getLeftBattery().getCells()[i][j][k].dischargeCell();
+
                     }
 
                 }
-                if (countAmount == energyAmount) {
-                    break;
-                }
 
             }
-            if (countAmount == energyAmount) {
-                break;
-            }
         }
-        System.out.println("left battery consumed till Cell L: " + leftI + " B: " + leftJ + " H: " + leftK);
-        countAmount = 0;    //countAmount is a helping variable set to zero at the end
+
+
+
 
     }
 
@@ -79,23 +78,22 @@ public class Control {
                         rightI = i;
                         rightJ = j;
                         rightK = k;
-                        break;
+                        System.out.println("right battery consumed till Cell L: " + rightI + " B: " + rightJ + " H: " + (rightK));
+                        countAmount = 0;
+                        return;
                     } else {
-                        energy.getRightBattery().getCells()[i][j][k].dischargeCell();
                         countAmount++;
+                        energy.getRightBattery().getCells()[i][j][k].dischargeCell();
+
                     }
 
                 }
-                if (countAmount == energyAmount) {
-                    break;
-                }
+
             }
-            if (countAmount == energyAmount) {
-                break;
-            }
+
         }
-        System.out.println("right battery consumed till Cell L: " + rightI + " B: " + rightJ + " H: " + rightK);
-        countAmount = 0;
+
+
     }
 
     public void useBothBatteries(int energyAmount) {   //ba

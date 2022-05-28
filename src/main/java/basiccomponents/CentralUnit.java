@@ -111,6 +111,7 @@ public class CentralUnit implements CyclicStick, CollectivePitchControl, Switch,
     public void switchTailRotorOn() {
         recordAndPrint();
         tailRotor.switchOn();
+        System.out.println("tail rotor switched on!");
         technics.getControl().useBatteries(600);
     }
 
@@ -193,7 +194,9 @@ public class CentralUnit implements CyclicStick, CollectivePitchControl, Switch,
     }
 
     public void printBeginConsole() {
-        System.out.println("please find flight history recorded by black box at src/main/java/basicComponents/flight_recorder.txt");
+        System.out.println("should you see this message in the flight_recorder.txt, it means you have run the test Application and then checked the log book!");
+        System.out.println("if you see this message in the console, then nice, you ran the main Builder Application!");
+        System.out.println("please find flight history recorded by black box at src/main/java/basicComponents/flight_recorder.txt only after running the main!!!");
         System.out.println("the console outputs refer to processes related to searching human by the drone...");
         System.out.println();
     }

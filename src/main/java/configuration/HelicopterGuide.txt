@@ -18,5 +18,6 @@ Some of our implementation ideas:
 - The helicopter has a black box that records all activities of the helicopter. At the end of the helicopter tour, logs can be bound at src/main/java/basicComponents/flight_recorder.txt
 - The two pilots can be  found in the cockpit. The paramedics, doctor and the patient are in the cabin
 - the staffs are not infected. The patient lies in the Transport Unit present in the cabin.
+- Tips to see the helicopter logs--> Run the Builder main, not the test Application and then check the file flight_recorder.txt
 
 Have a nice ride!
