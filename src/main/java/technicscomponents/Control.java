@@ -9,6 +9,8 @@ public class Control {
     private static int rightI;
     private static int rightJ;
     private static int rightK;
+
+    //all the variable above stores the information of the last discharged cell coordinates for loop optimization
     private static int countAmount;
     Energy energy;
     private BatteryManagement batteryManagement = BatteryManagement.B;
@@ -16,6 +18,12 @@ public class Control {
     public Control(Energy energy) {
         this.energy = energy;
     }
+
+
+    //changeBatteryUsage method changes the battery usage mode.
+    //this method is called when the knob for battery level management is turned in the control panel
+    //the default battery usage is set to B--> use both batteries when the main rotor is turned on
+
 
     public void changeBatteryUsage(BatteryManagement batteryManagement) {
         this.batteryManagement = batteryManagement;

@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="name conventions completed">
+      <change afterPath="$PROJECT_DIR$/src/main/java/basiccomponents/flight_recorder.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/basiccomponents/CentralUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basiccomponents/CentralUnit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/humancomponents/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/humancomponents/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/humancomponents/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/humancomponents/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/humancomponents/Lung.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/humancomponents/Lung.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/technicscomponents/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/technicscomponents/Control.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,23 +58,26 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="29efrOzV09F7QXcuMyuTtDq9dXS" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/vickysharma/Desktop/Java Projects/Rescue-Helicopter-withTest&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/vickysharma/Desktop/Java Projects/Rescue-Helicopter-withTest",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Gradle.TestApplication">
     <configuration name="Builder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Builder" />
@@ -133,8 +134,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TestBattery.testBattery" />
         <item itemvalue="Gradle.TestApplication" />
+        <item itemvalue="Gradle.TestBattery.testBattery" />
         <item itemvalue="Application.Builder" />
         <item itemvalue="Gradle.TestApplication" />
         <item itemvalue="Gradle.TestBattery.testBattery" />
@@ -277,6 +278,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="new with Test" />
     <MESSAGE value="Human" />
     <MESSAGE value="Human finished" />
@@ -299,7 +301,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/technicscomponents/Control.java</url>
-          <line>66</line>
+          <line>74</line>
           <option name="timeStamp" value="82" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -319,27 +321,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/technicscomponents/Control.java</url>
-          <line>84</line>
+          <line>92</line>
           <option name="timeStamp" value="117" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/technicscomponents/Control.java</url>
-          <line>42</line>
+          <line>50</line>
           <option name="timeStamp" value="121" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/technicscomponents/Control.java</url>
-          <line>46</line>
+          <line>54</line>
           <option name="timeStamp" value="123" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/technicscomponents/Control.java</url>
-          <line>50</line>
+          <line>58</line>
           <option name="timeStamp" value="124" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/technicscomponents/Control.java</url>
-          <line>101</line>
+          <line>109</line>
           <properties class="technicscomponents.Control">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
