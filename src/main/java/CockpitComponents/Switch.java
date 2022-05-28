@@ -9,6 +9,7 @@ public interface Switch {
     void switchTailRotorOn();
 
     void switchTailRotorOff();
+
     void openBackEntrance();
 
     void closeBackEntrance();

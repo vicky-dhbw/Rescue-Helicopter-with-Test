@@ -1,30 +1,26 @@
 package BasicComponents;
 
 import CockpitComponents.*;
-import DroneComponents.*;
+import DroneComponents.Drone;
+import DroneComponents.DroneCentralUnit;
 import TechnicsComponents.BatteryManagement;
 import TechnicsComponents.Technics;
 
 import java.io.PrintStream;
 
-public class CentralUnit implements CyclicStick, CollectivePitchControl, Switch, Knob,AntiTorquePedalLeft,AntiTorquePedalRight {
+public class CentralUnit implements CyclicStick, CollectivePitchControl, Switch, Knob, AntiTorquePedalLeft, AntiTorquePedalRight {
 
+    public final BlackBox blackBox;
     private final Technics technics;
     private final MainRotor mainRotor;
     private final TailRotor tailRotor;
     private final BackEntrance backEntrance;
     private final LandingLight landingLight;
     private final AntiCollisionLight antiCollisionLight;
-
     private final Drone drone;
-
     private final DroneCentralUnit droneCentralUnit;
-
-    public final BlackBox blackBox;
-
+    PrintStream console = System.out;
     private BatteryManagement batteryManagement;
-
-    PrintStream console=System.out;
 
     public CentralUnit(Drone drone, BlackBox blackBox, Technics technics, MainRotor mainRotor, TailRotor tailRotor, BackEntrance backEntrance, LandingLight landingLight, AntiCollisionLight antiCollisionLight) {
 
@@ -34,10 +30,11 @@ public class CentralUnit implements CyclicStick, CollectivePitchControl, Switch,
         this.backEntrance = backEntrance;
         this.landingLight = landingLight;
         this.antiCollisionLight = antiCollisionLight;
-        this.blackBox=blackBox;
-        this.drone=drone;
-        this.droneCentralUnit=drone.getDroneCentralUnit();
+        this.blackBox = blackBox;
+        this.drone = drone;
+        this.droneCentralUnit = drone.getDroneCentralUnit();
     }
+
     @Override
     public void raiseCollectivePitchControl() {
         recordAndPrint();
@@ -45,6 +42,7 @@ public class CentralUnit implements CyclicStick, CollectivePitchControl, Switch,
         System.out.println("increasing pitch angle of Main Rotor...");
         System.out.println("--> lifting helicopter....");
     }
+
     @Override
     public void lowerCollectivePitchControl() {
         recordAndPrint();
@@ -52,23 +50,27 @@ public class CentralUnit implements CyclicStick, CollectivePitchControl, Switch,
         System.out.println("decreasing pitch angle of Main Rotor...");
         System.out.println("--> sinking helicopter....");
     }
+
     @Override
     public void tiltLeft(int degree) {
         recordAndPrint();
         mainRotor.tiltLeft(degree);
     }
+
     @Override
     public void tiltRight(int degree) {
 
         recordAndPrint();
         mainRotor.tiltRight(degree);
     }
+
     @Override
     public void tiltFront(int degree) {
 
         recordAndPrint();
         mainRotor.tiltFront(degree);
     }
+
     @Override
     public void tiltBack(int degree) {
 
@@ -82,11 +84,10 @@ public class CentralUnit implements CyclicStick, CollectivePitchControl, Switch,
 
         recordAndPrint();
 
-        if(!mainRotor.getIsOn()){
+        if (!mainRotor.getIsOn()) {
             mainRotor.switchOn();
             technics.getControl().useBatteries(600);
-        }
-        else {
+        } else {
             System.out.println("try to switch on main rotor failed, since motor is already on..");
         }
 
@@ -95,10 +96,9 @@ public class CentralUnit implements CyclicStick, CollectivePitchControl, Switch,
     @Override
     public void switchMainRotorOff() {
         recordAndPrint();
-        if(mainRotor.getIsOn()){
+        if (mainRotor.getIsOn()) {
             mainRotor.switchOff();
-        }
-        else{
+        } else {
             System.out.println("try to switch off main rotor failed, since main rotor is already off..");
         }
 
@@ -142,7 +142,7 @@ public class CentralUnit implements CyclicStick, CollectivePitchControl, Switch,
     }
 
     @Override
-    public void switchAntiCollisionLightOn(){
+    public void switchAntiCollisionLightOn() {
         recordAndPrint();
         antiCollisionLight.switchOn();
     }
@@ -160,7 +160,7 @@ public class CentralUnit implements CyclicStick, CollectivePitchControl, Switch,
         printBeginConsole();
         drone.detach();                         //the drone is detached by the calling the method in the drone class
         droneCentralUnit.switchOnCamera();     // since this drone is managed by droneCentralUnit --> the camera is switched on from central unit of drone
-                                              //as soon as the camera turns on, the contents of the whole landscape is scanned and loaded, the search of the human is also done at this point
+        //as soon as the camera turns on, the contents of the whole landscape is scanned and loaded, the search of the human is also done at this point
         droneCentralUnit.switchOffCamera();
         drone.attach();                      //the drone automatically attaches itself to helicopter after the human has been found
 
@@ -184,12 +184,13 @@ public class CentralUnit implements CyclicStick, CollectivePitchControl, Switch,
         tailRotor.increaseLift();
     }
 
-    public void recordAndPrint(){
+    public void recordAndPrint() {
         blackBox.streamToFile();
         System.out.println("-----------------------------");
         System.out.println(blackBox.getLocalDateTime());
     }
-    public void printBeginConsole(){
+
+    public void printBeginConsole() {
         System.out.println("please find flight history recorded by black box at src/BasicComponents/flight_recorder.txt");
         System.out.println("the console outputs refer to processes related to searching human by the drone...");
         System.out.println();

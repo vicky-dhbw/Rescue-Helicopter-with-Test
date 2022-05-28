@@ -1,10 +1,10 @@
 package HumanComponents;
 
-public class Staff extends Human{
+public class Staff extends Human {
 
     public IDCard idCard;
 
-    public Staff(){
+    public Staff() {
         super(false);                 //no cells are damaged
     }
 

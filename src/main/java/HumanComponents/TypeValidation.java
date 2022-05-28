@@ -1,5 +1,5 @@
 package HumanComponents;
 
 public enum TypeValidation {
-    H135,H145
+    H135, H145
 }

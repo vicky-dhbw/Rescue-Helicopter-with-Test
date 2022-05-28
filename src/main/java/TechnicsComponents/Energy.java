@@ -1,22 +1,20 @@
 package TechnicsComponents;
 
-import BasicComponents.BackEntrance;
-
-import java.util.Map.Entry;
-
 public class Energy {
 
-    private Battery leftBattery;
-    private Battery rightBattery;
+    private final Battery leftBattery;
+    private final Battery rightBattery;
 
-    public Energy(){
+    public Energy() {
         leftBattery = new Battery();
         rightBattery = new Battery();
     }
-    public Battery getLeftBattery(){
+
+    public Battery getLeftBattery() {
         return leftBattery;
     }
-    public Battery getRightBattery(){
+
+    public Battery getRightBattery() {
         return rightBattery;
     }
 }

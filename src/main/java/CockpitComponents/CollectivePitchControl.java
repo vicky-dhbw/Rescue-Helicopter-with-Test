@@ -2,7 +2,7 @@ package CockpitComponents;
 
 public interface CollectivePitchControl {
 
-     void raiseCollectivePitchControl();
+    void raiseCollectivePitchControl();
 
-     void lowerCollectivePitchControl();
+    void lowerCollectivePitchControl();
 }

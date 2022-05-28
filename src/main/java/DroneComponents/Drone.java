@@ -1,51 +1,46 @@
 package DroneComponents;
 
-import BasicComponents.*;
-import CockpitComponents.Switch;
-
 public class Drone {
-
-    private boolean isDetached;
 
     private final Camera camera;
     private final DroneCentralUnit droneCentralUnit;            // the DroneCentral Unit controls the camera and the storage
-
     private final Storage storage;
+    private boolean isDetached;
 
 
     public Drone() {
-        isDetached=false;
+        isDetached = false;
         this.storage = new Storage();
         this.camera = new Camera();
-        this.droneCentralUnit = new DroneCentralUnit(camera,storage);
+        this.droneCentralUnit = new DroneCentralUnit(camera, storage);
     }
 
-    public Camera getCamera(){
+    public Camera getCamera() {
         return camera;
     }
 
-    public Storage getStorage(){
+    public Storage getStorage() {
         return storage;
     }
 
 
-    public void detach(){
-        isDetached=true;
+    public void detach() {
+        isDetached = true;
         System.out.println("detaching drone from helicopter...");
         System.out.println("drone set free..");
     }
 
-    public boolean getIsDetached(){
+    public boolean getIsDetached() {
 
         return isDetached;
     }
 
-    public DroneCentralUnit getDroneCentralUnit(){
+    public DroneCentralUnit getDroneCentralUnit() {
         return droneCentralUnit;
     }
 
-    public void attach(){
-        isDetached=false;
+    public void attach() {
+        isDetached = false;
         System.out.println("drone automatically attached to helicopter...");
     }
 

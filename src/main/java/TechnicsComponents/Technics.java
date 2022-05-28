@@ -1,22 +1,21 @@
 package TechnicsComponents;
 
 
-import CockpitComponents.Knob;
+public class Technics {
 
-public class Technics{
+    private final Energy energy;
+    private final Control control;
 
-    private Energy energy;
-    private Control control;
-    public Technics(){
+    public Technics() {
         energy = new Energy();
         control = new Control(energy);
     }
 
-    public Control getControl(){
+    public Control getControl() {
         return control;
     }
 
-    public Energy getEnergy(){
+    public Energy getEnergy() {
         return energy;
     }
 
