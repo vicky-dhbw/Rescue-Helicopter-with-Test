@@ -22,7 +22,6 @@ public class Control_Panel {
     public void switchOnOffMainRotor(boolean switchOn){
 
         if(switchOn){
-
             mainRotor.switchMainRotorOn();
         }
         else {

@@ -11,5 +11,9 @@ public class Cell {
         isCharged = false;
     }
 
+    public boolean getIsCharged(){
+        return isCharged;
+    }
+
 
 }

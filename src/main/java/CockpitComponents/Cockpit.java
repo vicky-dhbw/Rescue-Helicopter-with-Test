@@ -1,7 +1,7 @@
 package CockpitComponents;
 import BasicComponents.*;
 import Configuration.*;
-import TechnicsComponents.Technics;
+import HumanComponents.Pilot;
 
 public class Cockpit {
 
@@ -17,10 +17,10 @@ public class Cockpit {
 
 
     private final Control_Panel control_panel;
-    public Cockpit(Position position, CentralUnit centralUnit){
+    public Cockpit(Position position, CentralUnit centralUnit, Pilot pilot){
         this.position=position;
         entrance=new Entrance();
-        seat=new Seat();
+        seat=new Seat(pilot);
         display=new Display();
         cyclic_stick=centralUnit;
         collective_pitch_control=centralUnit;

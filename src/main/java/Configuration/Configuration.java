@@ -15,6 +15,8 @@ public enum Configuration {
 
     public final String dateTimeFormat="dd.MM.yyyy HH:mm:ss.SSSSSS";
 
+    public final String birthdayFormat="dd.MM.yyyy";
+
     public final int sectionElementCount=50;
 
 }

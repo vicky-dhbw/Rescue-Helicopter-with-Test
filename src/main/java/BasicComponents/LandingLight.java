@@ -12,4 +12,8 @@ public class LandingLight{
     public void switchOff(){
         isOn=false;
     }
+
+    public boolean getIsOn(){
+        return isOn;
+    }
 }
