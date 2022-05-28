@@ -1,0 +1,22 @@
+
+Welcome to Helicopter Guide
+----------------------------
+
+Some of our implementation ideas:
+
+- The helicopter cockpit has been divided as left and right parts making it possible for each pilot to have their own controlling devices
+- the controlling devices are realised to be interfaces that control their respective helicopter parts.
+   for example: the cyclic pitch interface can change the speed and direction of the main rotor
+- The collective pitch interface is used to lift the helicopter as a whole by setting the lift boolean variable present in main rotor class
+- The main and the tail rotor consumes batteries when they are switched on, here the battery level usage is set to B (both batteries) as default
+- As soon as the battery usage level is changed with the help of the knob present at the control panel, battery is consumed from the desired batter (B,L,R)
+- The drone can be set free with the help of a switch present at the control panel
+- On setting the drone free, the drone switches its camera by itself
+- There are no preset storages in the camera. The sections (landscape) are stored as soon as the camera is switched on
+- After human is found by the drone, the drone camera switched itself off and attached itself to the helicopter automatically
+- The coordinates where the human is found are printed on the console
+- The helicopter has a black box that records all activities of the helicopter. At the end of the helicopter tour, logs can be bound at src/main/java/basicComponents/flight_recorder.txt
+- The two pilots can be  found in the cockpit. The paramedics, doctor and the patient are in the cabin
+- the staffs are not infected. The patient lies in the Transport Unit present in the cabin.
+
+Have a nice ride!

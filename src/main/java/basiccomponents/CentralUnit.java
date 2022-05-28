@@ -193,7 +193,7 @@ public class CentralUnit implements CyclicStick, CollectivePitchControl, Switch,
     }
 
     public void printBeginConsole() {
-        System.out.println("please find flight history recorded by black box at src/basiccomponents/flight_recorder.txt");
+        System.out.println("please find flight history recorded by black box at src/main/java/basicComponents/flight_recorder.txt");
         System.out.println("the console outputs refer to processes related to searching human by the drone...");
         System.out.println();
     }

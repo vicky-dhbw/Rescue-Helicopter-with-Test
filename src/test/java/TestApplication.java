@@ -1,5 +1,6 @@
 import basiccomponents.Manufacturer;
 import basiccomponents.RescueHelicopter;
+import basiccomponents.Type;
 import cockpitcomponents.Directions;
 import technicscomponents.BatteryManagement;
 import technicscomponents.Cell;
@@ -16,7 +17,7 @@ public class TestApplication {
 
     @BeforeEach
     public void setUp() {
-        rescueHelicopter = new RescueHelicopter(Manufacturer.AIRBUS);
+        rescueHelicopter = new RescueHelicopter(Manufacturer.AIRBUS, Type.M145);
     }
 
     @Test

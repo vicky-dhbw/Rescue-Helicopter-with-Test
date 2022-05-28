@@ -23,17 +23,21 @@ public class RescueHelicopter {
     private final Cockpit cockpitLeft;
     private final Cockpit cockpitRight;
     private final Cabin cabin;
-    BackEntrance backEntrance = new BackEntrance();
-    LandingLight landingLight = new LandingLight();
-    AntiCollisionLight antiCollisionLight = new AntiCollisionLight();
-    MainRotor mainRotor;
-    TailRotor tailRotor;
-    Technics technics;
+    private final BackEntrance backEntrance = new BackEntrance();
+    private final LandingLight landingLight = new LandingLight();
+    private final AntiCollisionLight antiCollisionLight = new AntiCollisionLight();
+    private final MainRotor mainRotor;
+    private final TailRotor tailRotor;
+    private final Technics technics;
+
+    private final Type type;
 
 
-    public RescueHelicopter(Manufacturer manufacturer) {
+
+    public RescueHelicopter(Manufacturer manufacturer, Type type) {
 
         this.manufacturer = manufacturer;
+        this.type=Type.M145;
         serialNumber = UUID.randomUUID();
         blackBox = new BlackBox();
         drone = new Drone();

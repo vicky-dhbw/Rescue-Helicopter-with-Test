@@ -2,7 +2,6 @@ package technicscomponents;
 
 public class Control {
 
-    public static int tempK;
     private static int leftI;
     private static int leftJ;
     private static int leftK;
@@ -13,7 +12,7 @@ public class Control {
     //all the variable above stores the information of the last discharged cell coordinates for loop optimization
     private static int countAmount;
     Energy energy;
-    private BatteryManagement batteryManagement = BatteryManagement.B;
+    private BatteryManagement batteryManagement = BatteryManagement.B;  //default battery level
 
     public Control(Energy energy) {
         this.energy = energy;
@@ -43,7 +42,6 @@ public class Control {
 
     public void useLeftBattery(int energyAmount) {
 
-        tempK = 0;
         for (int i = leftI; i < 250; i++) {
             for (int j = leftJ; j < 100; j++) {
                 for (int k = leftK; k < 50; k++) {
@@ -51,7 +49,6 @@ public class Control {
                         leftI = i;
                         leftJ = j;
                         leftK = k;
-                        tempK = rightK + 1;
                         break;
                     } else {
                         energy.getLeftBattery().getCells()[i][j][k].dischargeCell();
@@ -69,12 +66,11 @@ public class Control {
             }
         }
         System.out.println("left battery consumed till Cell L: " + leftI + " B: " + leftJ + " H: " + leftK);
-        countAmount = 0;
+        countAmount = 0;    //countAmount is a helping variable set to zero at the end
 
     }
 
     public void useRightBattery(int energyAmount) {
-        tempK = 0;
 
         for (int i = rightI; i < 250; i++) {
             for (int j = rightJ; j < 100; j++) {
@@ -83,7 +79,6 @@ public class Control {
                         rightI = i;
                         rightJ = j;
                         rightK = k;
-                        tempK = rightK + 1;
                         break;
                     } else {
                         energy.getRightBattery().getCells()[i][j][k].dischargeCell();
@@ -103,7 +98,7 @@ public class Control {
         countAmount = 0;
     }
 
-    public void useBothBatteries(int energyAmount) {
+    public void useBothBatteries(int energyAmount) {   //ba
         int energyAmountPerBattery;
         int oneMore;
         if (energyAmount % 2 != 0) {
@@ -111,7 +106,7 @@ public class Control {
             energyAmountPerBattery = energyAmount / 2;
             oneMore = energyAmount / 2 + 1;
         } else {
-            energyAmountPerBattery = energyAmount / 2;
+            energyAmountPerBattery = energyAmount / 2;    //battery usage halved for each battery
             oneMore = energyAmount / 2;
         }
 

@@ -4,8 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="Little Changes in methods of humancomponents and commentation of CentralUnit and humancomponents">
+    <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="..">
+      <change afterPath="$PROJECT_DIR$/src/main/java/configuration/HelicopterGuide.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Builder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basiccomponents/Type.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/basiccomponents/CentralUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basiccomponents/CentralUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/basiccomponents/RescueHelicopter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basiccomponents/RescueHelicopter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/basiccomponents/flight_recorder.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basiccomponents/flight_recorder.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/technicscomponents/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/technicscomponents/Control.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +85,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Builder">
+  <component name="RunManager" selected="Gradle.TestApplication">
     <configuration name="Builder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Builder" />
       <module name="Rescue-Helicopter-withTest.main" />
@@ -159,6 +168,7 @@
       <workItem from="1653651047082" duration="30000" />
       <workItem from="1653659777609" duration="13508000" />
       <workItem from="1653714974193" duration="15044000" />
+      <workItem from="1653751530077" duration="4209000" />
     </task>
     <task id="LOCAL-00001" summary="new with Test">
       <created>1653479299619</created>
@@ -258,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653743377595</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="..">
+      <created>1653751232597</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1653751232597</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,14 +304,15 @@
     <MESSAGE value="test collective pitch passed&#10;test antiTorque pedals passed" />
     <MESSAGE value="testing..." />
     <MESSAGE value="name conventions completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="name conventions completed" />
+    <MESSAGE value=".." />
+    <option name="LAST_COMMIT_MESSAGE" value=".." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/technicscomponents/Control.java</url>
-          <line>74</line>
+          <line>71</line>
           <option name="timeStamp" value="82" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -314,22 +332,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/technicscomponents/Control.java</url>
-          <line>92</line>
+          <line>87</line>
           <option name="timeStamp" value="117" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/technicscomponents/Control.java</url>
-          <line>50</line>
+          <line>48</line>
           <option name="timeStamp" value="121" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/technicscomponents/Control.java</url>
-          <line>54</line>
+          <line>51</line>
           <option name="timeStamp" value="123" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/technicscomponents/Control.java</url>
-          <line>58</line>
+          <line>55</line>
           <option name="timeStamp" value="124" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -337,29 +355,9 @@
           <line>62</line>
           <option name="timeStamp" value="168" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="169" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="170" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="171" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="172" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/technicscomponents/Control.java</url>
-          <line>109</line>
+          <line>104</line>
           <properties class="technicscomponents.Control">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -395,7 +393,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/TestApplication.java</url>
-          <line>17</line>
+          <line>18</line>
           <properties class="TestApplication" method="setUp">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
