@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="name conventions completed" />
+    <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="name conventions completed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/basiccomponents/CentralUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basiccomponents/CentralUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/humancomponents/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/humancomponents/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/humancomponents/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/humancomponents/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/humancomponents/Lung.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/humancomponents/Lung.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +42,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="vicky" />
+        <entry key="$PROJECT_DIR$" value="new" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -127,9 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestBattery.testBattery" />
+        <item itemvalue="Gradle.TestApplication" />
+        <item itemvalue="Application.Builder" />
         <item itemvalue="Gradle.TestApplication" />
         <item itemvalue="Gradle.TestBattery.testBattery" />
-        <item itemvalue="Application.Builder" />
       </list>
     </recent_temporary>
   </component>
@@ -296,12 +304,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/basiccomponents/CentralUnit.java</url>
-          <line>90</line>
+          <line>92</line>
           <option name="timeStamp" value="93" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/basiccomponents/CentralUnit.java</url>
-          <line>89</line>
+          <line>91</line>
           <option name="timeStamp" value="95" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
