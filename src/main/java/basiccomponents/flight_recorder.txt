@@ -1,82 +1,82 @@
 -----------------------------
-28.05.2022 17:13:33.488713
+28.05.2022 17:20:10.253976
 main rotor switched on!
 left battery consumed till Cell L: 0 B: 0 H: 0
 right battery consumed till Cell L: 0 B: 0 H: 0
 -----------------------------
-28.05.2022 17:13:33.566729
+28.05.2022 17:20:10.266076
 left battery consumed till Cell L: 0 B: 0 H: 0
 Battery usage level set to: L
 -----------------------------
-28.05.2022 17:13:33.879264
+28.05.2022 17:20:10.395058
 left battery consumed till Cell L: 0 B: 0 H: 0
 right battery consumed till Cell L: 0 B: 0 H: 0
 Battery usage level set to: B
 -----------------------------
-28.05.2022 17:13:33.881262
+28.05.2022 17:20:10.395629
 main rotor switched off!
 -----------------------------
-28.05.2022 17:13:33.881262
+28.05.2022 17:20:10.395738
 main rotor switched on!
 left battery consumed till Cell L: 0 B: 0 H: 0
 right battery consumed till Cell L: 0 B: 0 H: 0
 -----------------------------
-28.05.2022 17:13:33.883251
+28.05.2022 17:20:10.396289
 -----------------------------
-28.05.2022 17:13:33.883251
+28.05.2022 17:20:10.396368
 increasing pitch angle of Main Rotor...
 --> lifting helicopter....
 -----------------------------
-28.05.2022 17:13:33.883251
+28.05.2022 17:20:10.396474
 decreasing pitch angle of Main Rotor...
 --> sinking helicopter....
 -----------------------------
-28.05.2022 17:13:33.883251
+28.05.2022 17:20:10.396576
 increasing pitch angle of Main Rotor...
 --> lifting helicopter....
 -----------------------------
-28.05.2022 17:13:33.884251
+28.05.2022 17:20:10.396675
 Cyclic stick moved 1 degree LEFT
 helicopter going LEFT with a speed of 50.0 km/h ....
 -----------------------------
-28.05.2022 17:13:33.913254
+28.05.2022 17:20:10.406694
 Cyclic stick moved 3 degree BACKWARD
 helicopter going BACKWARD with a speed of 150.0 km/h ....
 -----------------------------
-28.05.2022 17:13:33.915251
+28.05.2022 17:20:10.407181
 Cyclic stick moved 5 degree FORWARD
 helicopter going FORWARD with a speed of 250.0 km/h ....
 -----------------------------
-28.05.2022 17:13:33.915251
+28.05.2022 17:20:10.407589
 Cyclic stick moved 4 degree RIGHT
 helicopter going RIGHT with a speed of 200.0 km/h ....
 -----------------------------
-28.05.2022 17:13:33.916250
+28.05.2022 17:20:10.408005
 Anti collision light switched on!
 -----------------------------
-28.05.2022 17:13:33.917251
+28.05.2022 17:20:10.408172
 Anti collision light switched off!
 -----------------------------
-28.05.2022 17:13:33.917251
+28.05.2022 17:20:10.408284
 Anti collision light switched on!
 -----------------------------
-28.05.2022 17:13:33.917251
+28.05.2022 17:20:10.408380
 --> opening back doors..  ..I   I..
 -----------------------------
-28.05.2022 17:13:33.917251
+28.05.2022 17:20:10.408582
 --> closing back doors..  ..II..
 -----------------------------
-28.05.2022 17:13:33.917251
+28.05.2022 17:20:10.408690
 ---> lift of tail rotor is decreased.
 yawing the helicopter to the left...
 tail of the helicopter is turning in the direction of the rotation of main rotor..
 -----------------------------
-28.05.2022 17:13:33.918249
+28.05.2022 17:20:10.408930
 ---> lift of tail rotor is increased.
 yawing the helicopter to the right...
 tail of the helicopter is turning opposite to the direction of the rotation of main rotor..
 -----------------------------
-28.05.2022 17:13:33.918249
+28.05.2022 17:20:10.409071
 ---> lift of tail rotor is decreased.
 yawing the helicopter to the left...
 tail of the helicopter is turning in the direction of the rotation of main rotor..
