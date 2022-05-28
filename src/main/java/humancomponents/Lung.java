@@ -64,12 +64,9 @@ public class Lung {
             for (int j = 0; j < 20; j++) {
                 if (cells[i][j] == null) { //damaged Cells have been set, so only free places can contain healthy Cells.
                     //Probability for infection of the other cells is implemented here.
+                    cells[i][j] = new Cell(CellType.H);
                     if (isInfected && new Random().nextInt(100) < probability && (cells[i][j].getCellType() == CellType.H)) {
                         cells[i][j] = new InfectedCell(CellType.I);
-                    }
-                    //the left free places can store a healthy Cell
-                    else{
-                        cells[i][j] = new Cell(CellType.H);
                     }
                 }
             }
@@ -110,7 +107,7 @@ public class Lung {
                 cells[i][j].setOxygenCarbonDioxide('o');
                 //every Cell can be infected dependend on the probability for infection and the boolean isInfected
                 if (isInfected && new Random().nextInt(100) < probability && (cells[i][j].getCellType() == CellType.H)) {
-                    cells[i][j].setCellType();
+                    cells[i][j] = new InfectedCell(CellType.I);
                 }
             }
         }
