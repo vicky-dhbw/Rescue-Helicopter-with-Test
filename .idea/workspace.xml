@@ -7,9 +7,7 @@
     <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="testing...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/flight_recorder.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/flight_recorder.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Builder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CockpitComponents/Control_Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CockpitComponents/Control_Panel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DroneComponents/DroneCentralUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DroneComponents/DroneCentralUnit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +66,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.TestApplication">
+  <component name="RunManager" selected="Application.Builder">
     <configuration name="Builder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Builder" />
       <module name="Rescue-Helicopter-withTest.main" />
@@ -148,7 +146,7 @@
       <workItem from="1653646390209" duration="2686000" />
       <workItem from="1653651047082" duration="30000" />
       <workItem from="1653659777609" duration="13508000" />
-      <workItem from="1653714974193" duration="12011000" />
+      <workItem from="1653714974193" duration="15044000" />
     </task>
     <task id="LOCAL-00001" summary="new with Test">
       <created>1653479299619</created>
@@ -234,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653688892346</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="testing...">
+      <created>1653734639492</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1653734639493</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -414,7 +419,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/TestApplication.java</url>
-          <line>17</line>
+          <line>18</line>
           <properties class="TestApplication" method="setUp">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

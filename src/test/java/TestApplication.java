@@ -1,6 +1,7 @@
 import BasicComponents.Manufacturer;
 import BasicComponents.RescueHelicopter;
 import CockpitComponents.Directions;
+import DroneComponents.Storage;
 import TechnicsComponents.Battery;
 import TechnicsComponents.BatteryManagement;
 import TechnicsComponents.Cell;
@@ -180,6 +181,8 @@ public class TestApplication {
     @Order(8)
     public void checkDrone(){
 
+        rescueHelicopter.getCockpitRight().getControl_panel().setDroneFree();
+        assertTrue(rescueHelicopter.getDrone().getDroneCentralUnit().searchHuman());
     }
 
 
