@@ -1,5 +1,4 @@
 -----------------------------
-27.05.2022 23:53:57.017947
-main rotor switched on!
-left battery consumed till Cell L: 0 B: 58 H: 49
-right battery consumed till Cell L: 249 B: 99 H: 49
+28.05.2022 11:01:04.467256
+left battery consumed till Cell L: 0 B: 0 H: 0
+Battery usage level set to: L

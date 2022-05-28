@@ -6,13 +6,13 @@ public class Control {
 
     Energy energy;
 
-    public static int leftI;
-    public static int leftJ;
-    public static int leftK;
-    public static int rightI;
-    public static int rightJ;
-    public static int rightK;
-    public static int countAmount;
+    private static int leftI;
+    private static int leftJ;
+    private static int leftK;
+    private static int rightI;
+    private static int rightJ;
+    private static int rightK;
+    private static int countAmount;
 
     public static int tempK;
     public Control(Energy energy){
@@ -20,6 +20,7 @@ public class Control {
     }
     public void changeBatteryUsage(BatteryManagement batteryManagement) {
         this.batteryManagement = batteryManagement;
+        useBatteries(600);
         System.out.println("Battery usage level set to: "+batteryManagement );
     }
     public void useBatteries(int RPM) {
@@ -32,63 +33,66 @@ public class Control {
         }
     }
     public void useLeftBattery(int energyAmount) {
-        countAmount=0;
+
         tempK=0;
-        for(int i=0; i<250; i++){
-            for(int j=0; j<100; j++){
-                for(int k=0; k<50; k++){
+        for(int i=leftI; i<250; i++){
+            for(int j=leftJ; j<100; j++){
+                for(int k=leftK; k<50; k++){
                     if(countAmount==energyAmount){
-                        tempK=leftK+1;
+                        leftI=i;
+                        leftJ=j;
+                        leftK=k;
+                        tempK=rightK+1;
                         break;
                     }
-                    leftK=k;
-                    energy.getLeftBattery().getCells()[i][j][k].dischargeCell();
-                    countAmount++;
+                    else{
+                        energy.getLeftBattery().getCells()[i][j][k].dischargeCell();
+                        countAmount++;
+                    }
+
                 }
                 if(countAmount==energyAmount){
                     break;
                 }
-                leftJ=j;
 
             }
             if(countAmount==energyAmount){
                 break;
             }
-            leftI=i;
-
         }
         System.out.println("left battery consumed till Cell L: "+leftI+ " B: "+ leftJ+ " H: "+leftK);
+        countAmount=0;
 
     }
 
     public void useRightBattery(int energyAmount) {
-        countAmount=0;
         tempK=0;
+
         for(int i=rightI; i<250; i++){
             for(int j=rightJ; j<100; j++){
                 for(int k=rightK; k<50; k++){
                     if(countAmount==energyAmount){
+                        rightI=i;
+                        rightJ=j;
+                        rightK=k;
                         tempK=rightK+1;
                         break;
+                    }else{
+                        energy.getRightBattery().getCells()[i][j][k].dischargeCell();
+                        countAmount++;
                     }
 
-                    energy.getRightBattery().getCells()[i][j][k].dischargeCell();
-                    rightK=k;
-                    countAmount++;
                 }
-                rightJ=j;
                 if(countAmount==energyAmount){
                     break;
                 }
             }
-            rightI=i;
             if(countAmount==energyAmount){
                 break;
             }
         }
         System.out.println("right battery consumed till Cell L: "+rightI+ " B: "+ rightJ+ " H: "+rightK);
-        rightK=tempK;
-
+        countAmount=0;
     }
 
     public void useBothBatteries(int energyAmount) {
@@ -113,14 +117,5 @@ public class Control {
         return batteryManagement;
     }
 
-    public int[] getLeftIJK(){
-
-        int[] IJK=new int[3];
-        IJK[0]=leftI;
-        IJK[1]=leftJ;
-        IJK[2]=leftK;
-
-        return IJK;
-    }
 
 }
