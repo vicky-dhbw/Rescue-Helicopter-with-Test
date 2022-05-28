@@ -6,8 +6,7 @@ import java.io.FileNotFoundException;
 
 public class Builder {
 
-    public static void main(String[] args) throws FileNotFoundException {
-        int i = 0;
+    public static void main(String[] args){
 
         RescueHelicopter rescueHelicopter = new RescueHelicopter(Manufacturer.AIRBUS);
         rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffMainRotor(true);
