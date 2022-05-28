@@ -6,8 +6,8 @@ import java.util.Random;
 
 public class DroneCentralUnit {
 
-    Camera camera;
-    Storage storage;
+    private Camera camera;
+    private Storage storage;
 
     //since drone central unit must control the camera and storage, the two are given as parameter in default constructor
     public DroneCentralUnit(Camera camera, Storage storage) {
@@ -29,7 +29,7 @@ public class DroneCentralUnit {
 
     }
 
-    public void searchHuman() {
+    public boolean searchHuman() {
 
         int sectionCoordinateI;
         int sectionCoordinateJ;
@@ -37,7 +37,7 @@ public class DroneCentralUnit {
         int inSectionK;
         int inSectionL;
 
-        boolean breakLoops = false;
+
         Section section;
         String arrayAsString;
         char[] arrayCopy = new char[Configuration.INSTANCE.sectionElementCount];
@@ -55,23 +55,24 @@ public class DroneCentralUnit {
                         sectionCoordinateJ = j;
                         inSectionK = k;
                         inSectionL = arrayAsString.indexOf("human");
-                        breakLoops = true;
                         System.out.println("human found in Section in coordinate--> X: " + sectionCoordinateI + " ,Y: " + sectionCoordinateJ);
                         System.out.println("In the above section is human to be found at coordinates ---> x: " + inSectionK + " ,y: " + inSectionL);
-                        break;
+                        return true;
                     }
 
                 }
-                if (breakLoops) {
-                    break;
-                }
 
             }
-            if (breakLoops) {
-                break;
-            }
-
         }
+        return false;
+    }
+
+    public Camera getCamera(){
+        return camera;
+    }
+
+    public Storage getStorage(){
+        return storage;
     }
 }
 

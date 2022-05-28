@@ -116,13 +116,12 @@ public class Builder {
         smoker.breatheOut();*/
 
         RescueHelicopter rescueHelicopter=new RescueHelicopter(Manufacturer.AIRBUS);
-        rescueHelicopter.getCockpitLeft().getControl_panel().changeEnergyUsage(BatteryManagement.L);
         rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffMainRotor(true);
+       rescueHelicopter.getCockpitLeft().getControl_panel().changeEnergyUsage(BatteryManagement.L);
         rescueHelicopter.getCockpitLeft().getControl_panel().setDroneFree();     //Note: the drone loads all sections in storage after it detaches
-        rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffMainRotor(true);
-        rescueHelicopter.getCockpitLeft().getControl_panel().changeEnergyUsage(BatteryManagement.B);
-        rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffMainRotor(false);
-        rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffMainRotor(true);
+        //rescueHelicopter.getCockpitLeft().getControl_panel().changeEnergyUsage(BatteryManagement.B);
+        //rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffMainRotor(false);
+        //rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffMainRotor(true);
         rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffLandingLight(true);
 
         rescueHelicopter.getCockpitLeft().getCollective_pitch_control().raiseCollectivePitchControl();

@@ -1,7 +1,69 @@
 -----------------------------
-27.05.2022 23:54:36.479298
+28.05.2022 13:53:18.787671
+main rotor switched on!
+left battery consumed till Cell L: 0 B: 0 H: 0
+right battery consumed till Cell L: 0 B: 0 H: 0
+-----------------------------
+28.05.2022 13:53:18.802220
+left battery consumed till Cell L: 0 B: 0 H: 0
 Battery usage level set to: L
 -----------------------------
-27.05.2022 23:54:36.484299
-main rotor switched on!
-left battery consumed till Cell L: 249 B: 99 H: 49
+28.05.2022 13:53:18.918973
+-----------------------------
+28.05.2022 13:53:18.919086
+increasing pitch angle of Main Rotor...
+--> lifting helicopter....
+-----------------------------
+28.05.2022 13:53:18.919196
+decreasing pitch angle of Main Rotor...
+--> sinking helicopter....
+-----------------------------
+28.05.2022 13:53:18.919307
+increasing pitch angle of Main Rotor...
+--> lifting helicopter....
+-----------------------------
+28.05.2022 13:53:18.919409
+Cyclic stick moved 1 degree LEFT
+helicopter going LEFT with a speed of 50.0 km/h ....
+-----------------------------
+28.05.2022 13:53:18.929597
+Cyclic stick moved 3 degree BACKWARD
+helicopter going BACKWARD with a speed of 150.0 km/h ....
+-----------------------------
+28.05.2022 13:53:18.930353
+Cyclic stick moved 5 degree FORWARD
+helicopter going FORWARD with a speed of 250.0 km/h ....
+-----------------------------
+28.05.2022 13:53:18.930962
+Cyclic stick moved 4 degree RIGHT
+helicopter going RIGHT with a speed of 200.0 km/h ....
+-----------------------------
+28.05.2022 13:53:18.931550
+Anti collision light switched on!
+-----------------------------
+28.05.2022 13:53:18.931721
+Anti collision light switched off!
+-----------------------------
+28.05.2022 13:53:18.931836
+Anti collision light switched on!
+-----------------------------
+28.05.2022 13:53:18.931940
+--> opening back doors..  ..I   I..
+-----------------------------
+28.05.2022 13:53:18.932055
+--> closing back doors..  ..II..
+-----------------------------
+28.05.2022 13:53:18.932147
+---> lift of tail rotor is decreased.
+yawing the helicopter to the left...
+tail of the helicopter is turning in the direction of the rotation of main rotor..
+-----------------------------
+28.05.2022 13:53:18.932273
+---> lift of tail rotor is increased.
+yawing the helicopter to the right...
+tail of the helicopter is turning opposite to the direction of the rotation of main rotor..
+-----------------------------
+28.05.2022 13:53:18.932399
+---> lift of tail rotor is decreased.
+yawing the helicopter to the left...
+tail of the helicopter is turning in the direction of the rotation of main rotor..

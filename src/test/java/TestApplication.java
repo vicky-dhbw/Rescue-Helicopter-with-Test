@@ -1,7 +1,10 @@
 import BasicComponents.Manufacturer;
 import BasicComponents.RescueHelicopter;
 import CockpitComponents.Directions;
+import DroneComponents.Storage;
+import TechnicsComponents.Battery;
 import TechnicsComponents.BatteryManagement;
+import TechnicsComponents.Cell;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -100,7 +103,7 @@ public class TestApplication {
         rescueHelicopter.getCockpitLeft().getControl_panel().openCloseBackEntrance(true);
         assertTrue(rescueHelicopter.getBackEntrance().getIsOpen());
 
-        rescueHelicopter.getCockpitRight().getControl_panel().switchOnOffMainRotor(true);
+       rescueHelicopter.getCockpitRight().getControl_panel().switchOnOffMainRotor(true);
         assertTrue(rescueHelicopter.getMainMotor().getIsOn());
 
         rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffTailRotor(false);
@@ -114,14 +117,74 @@ public class TestApplication {
 
     @Test
     @Order(6)
-    public void checkBatteryManagement(){
+    @DisplayName("Battery Usage Test: a total of 6000 cells should be discharged in Energy containing left and right batteries... ")
+    public void checkBatteryUsage(){
 
-        rescueHelicopter.getCockpitRight().getControl_panel().changeEnergyUsage(BatteryManagement.L);
-        rescueHelicopter.getCockpitRight().getControl_panel().switchOnOffMainRotor(true);
-        int[] expectedIJK=new int[]{1,19,0};
-        assertArrayEquals(expectedIJK, rescueHelicopter.getTechnics().getControl().getLeftIJK());
+        // the rpm=600 * 10 Battery units= 6000;
+        rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffMainRotor(true);
+       int counter=0;
+
+        Cell[][][] cellLeft=rescueHelicopter.getTechnics().getEnergy().getLeftBattery().getCells();
+        Cell[][][] cellRight=rescueHelicopter.getTechnics().getEnergy().getRightBattery().getCells();
+
+        for(int i=0;i<250;i++){
+            for(int j=0;j<100;j++){
+                for(int k=0;k<50;k++){
+                    if(!cellLeft[i][j][k].getIsCharged()){
+                        counter++;
+                    }
+                }
+            }
+        }
+
+        for(int i=0;i<250;i++){
+            for(int j=0;j<100;j++){
+                for(int k=0;k<50;k++){
+                    if(!cellRight[i][j][k].getIsCharged()){
+                        counter++;
+                    }
+                }
+            }
+        }
+      assertEquals(6000,counter);
 
     }
+
+    @Test
+    @Order(7)
+    @DisplayName("individual testing left battery..")
+    public void checkBatteryRegulate(){
+
+        BatteryManagement batteryManagement=BatteryManagement.L;
+        rescueHelicopter.getCockpitLeft().getControl_panel().changeEnergyUsage(BatteryManagement.L);
+
+        int counter=0;
+
+        Cell[][][] cellLeft=rescueHelicopter.getTechnics().getEnergy().getLeftBattery().getCells();
+
+        for(int i=0;i<250;i++){
+            for(int j=0;j<100;j++){
+                for(int k=0;k<50;k++){
+                    if(!cellLeft[i][j][k].getIsCharged()){
+                        counter++;
+                    }
+                }
+            }
+        }
+
+        assertEquals(6000,counter);
+        assertEquals(batteryManagement,rescueHelicopter.getTechnics().getControl().getBatteryManagement());
+
+    }
+
+    @Test
+    @Order(8)
+    public void checkDrone(){
+
+        rescueHelicopter.getCockpitRight().getControl_panel().setDroneFree();
+        assertTrue(rescueHelicopter.getDrone().getDroneCentralUnit().searchHuman());
+    }
+
 
 
 }
