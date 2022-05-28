@@ -1,8 +1,8 @@
-import BasicComponents.Manufacturer;
-import BasicComponents.RescueHelicopter;
-import CockpitComponents.Directions;
-import TechnicsComponents.BatteryManagement;
-import TechnicsComponents.Cell;
+import basiccomponents.Manufacturer;
+import basiccomponents.RescueHelicopter;
+import cockpitcomponents.Directions;
+import technicscomponents.BatteryManagement;
+import technicscomponents.Cell;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -36,9 +36,9 @@ public class TestApplication {
     @Test
     @Order(2)
     @DisplayName("Main rotor properties must change accordingly..")
-    public void CyclicStickWorks() {
+    public void cyclicStickWorks() {
 
-        rescueHelicopter.getCockpitLeft().getCyclic_stick().tiltLeft(3);    //controlling rotor from leftCockpit
+        rescueHelicopter.getCockpitLeft().getCyclicStick().tiltLeft(3);    //controlling rotor from leftCockpit
         assertEquals(150.0, rescueHelicopter.getMainMotor().getSpeed());
         assertEquals(3, rescueHelicopter.getMainMotor().getAngleRotorBlades());
 
@@ -46,7 +46,7 @@ public class TestApplication {
         assertEquals(expectedDirection, rescueHelicopter.getMainMotor().getDirection());
 
 
-        rescueHelicopter.getCockpitRight().getCyclic_stick().tiltFront(5);    //controlling rotor from rightCockpit
+        rescueHelicopter.getCockpitRight().getCyclicStick().tiltFront(5);    //controlling rotor from rightCockpit
         assertEquals(250.0, rescueHelicopter.getMainMotor().getSpeed());
         assertEquals(5, rescueHelicopter.getMainMotor().getAngleRotorBlades());
 
@@ -56,28 +56,28 @@ public class TestApplication {
 
     @Test
     @Order(3)
-    public void CollectivePitchWorks() {
+    public void collectivePitchWorks() {
 
         //for right cockpit
-        rescueHelicopter.getCockpitRight().getCollective_pitch_control().raiseCollectivePitchControl();
+        rescueHelicopter.getCockpitRight().getCollectivePitchControl().raiseCollectivePitchControl();
         assertTrue(rescueHelicopter.getMainMotor().getRaise());
 
-        rescueHelicopter.getCockpitRight().getCollective_pitch_control().lowerCollectivePitchControl();
+        rescueHelicopter.getCockpitRight().getCollectivePitchControl().lowerCollectivePitchControl();
         assertFalse(rescueHelicopter.getMainMotor().getRaise());
 
 
         //for left cockpit
-        rescueHelicopter.getCockpitLeft().getCollective_pitch_control().raiseCollectivePitchControl();
+        rescueHelicopter.getCockpitLeft().getCollectivePitchControl().raiseCollectivePitchControl();
         assertTrue(rescueHelicopter.getMainMotor().getRaise());
 
-        rescueHelicopter.getCockpitLeft().getCollective_pitch_control().lowerCollectivePitchControl();
+        rescueHelicopter.getCockpitLeft().getCollectivePitchControl().lowerCollectivePitchControl();
         assertFalse(rescueHelicopter.getMainMotor().getRaise());
 
     }
 
     @Test
     @Order(4)
-    public void AntiTorquePedalsWorks() {
+    public void antiTorquePedalsWorks() {
 
         //right cockpit
         rescueHelicopter.getCockpitRight().getAntiTorquePedalRight().increaseLift();
@@ -91,25 +91,25 @@ public class TestApplication {
 
     @Test
     @Order(5)
-    public void SwitchesWork() {
-        rescueHelicopter.getCockpitRight().getControl_panel().switchOnOffLandingLight(true);
+    public void switchesWork() {
+        rescueHelicopter.getCockpitRight().getControlPanel().switchOnOffLandingLight(true);
         assertTrue(rescueHelicopter.getLandingLight().getIsOn());
 
 
-        rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffAntiCollisionLight(false);
+        rescueHelicopter.getCockpitLeft().getControlPanel().switchOnOffAntiCollisionLight(false);
         assertFalse(rescueHelicopter.getAntiCollisionLight().getIsOn());
 
-        rescueHelicopter.getCockpitLeft().getControl_panel().openCloseBackEntrance(true);
+        rescueHelicopter.getCockpitLeft().getControlPanel().openCloseBackEntrance(true);
         assertTrue(rescueHelicopter.getBackEntrance().getIsOpen());
 
-        rescueHelicopter.getCockpitRight().getControl_panel().switchOnOffMainRotor(true);
+        rescueHelicopter.getCockpitRight().getControlPanel().switchOnOffMainRotor(true);
         assertTrue(rescueHelicopter.getMainMotor().getIsOn());
 
-        rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffTailRotor(false);
+        rescueHelicopter.getCockpitLeft().getControlPanel().switchOnOffTailRotor(false);
         assertFalse(rescueHelicopter.getTailRotor().getIsOn());
 
         BatteryManagement batteryManagement = BatteryManagement.L;
-        rescueHelicopter.getCockpitRight().getControl_panel().changeEnergyUsage(BatteryManagement.L);
+        rescueHelicopter.getCockpitRight().getControlPanel().changeEnergyUsage(BatteryManagement.L);
         assertEquals(batteryManagement, rescueHelicopter.getTechnics().getControl().getBatteryManagement());
 
     }
@@ -120,7 +120,7 @@ public class TestApplication {
     public void checkBatteryUsage() {
 
         // the rpm=600 * 10 Battery units= 6000;
-        rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffMainRotor(true);
+        rescueHelicopter.getCockpitLeft().getControlPanel().switchOnOffMainRotor(true);
         int counter = 0;
 
         Cell[][][] cellLeft = rescueHelicopter.getTechnics().getEnergy().getLeftBattery().getCells();
@@ -155,7 +155,7 @@ public class TestApplication {
     public void checkBatteryRegulate() {
 
         BatteryManagement batteryManagement = BatteryManagement.L;
-        rescueHelicopter.getCockpitLeft().getControl_panel().changeEnergyUsage(BatteryManagement.L);
+        rescueHelicopter.getCockpitLeft().getControlPanel().changeEnergyUsage(BatteryManagement.L);
 
         int counter = 0;
 
@@ -180,7 +180,7 @@ public class TestApplication {
     @Order(8)
     public void checkDrone() {
 
-        rescueHelicopter.getCockpitRight().getControl_panel().setDroneFree();
+        rescueHelicopter.getCockpitRight().getControlPanel().setDroneFree();
         assertTrue(rescueHelicopter.getDrone().getDroneCentralUnit().searchHuman());
     }
 

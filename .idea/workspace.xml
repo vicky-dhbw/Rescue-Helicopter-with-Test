@@ -5,53 +5,65 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d71f910b-512e-45e9-a617-fe00a722f832" name="Changes" comment="testing...">
-      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/AntiCollisionLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/AntiCollisionLight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/BackEntrance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/BackEntrance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/BlackBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/BlackBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/CentralUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/CentralUnit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/LandingLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/LandingLight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/MainRotor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/MainRotor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/RescueHelicopter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/RescueHelicopter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/Rotor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/Rotor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/TailRotor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/TailRotor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/flight_recorder.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicComponents/flight_recorder.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/AntiCollisionLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basiccomponents/AntiCollisionLight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/BackEntrance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basiccomponents/BackEntrance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/BlackBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basiccomponents/BlackBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/CentralUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basiccomponents/CentralUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/LandingLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basiccomponents/LandingLight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/MainRotor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basiccomponents/MainRotor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/Manufacturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basiccomponents/Manufacturer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/RescueHelicopter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basiccomponents/RescueHelicopter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/Rotor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basiccomponents/Rotor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/TailRotor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basiccomponents/TailRotor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicComponents/flight_recorder.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basiccomponents/flight_recorder.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Builder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CabinComponents/Cabin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CabinComponents/Cabin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CabinComponents/TransportUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CabinComponents/TransportUnit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CockpitComponents/Cockpit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CockpitComponents/Cockpit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CockpitComponents/CollectivePitchControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CockpitComponents/CollectivePitchControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CockpitComponents/Control_Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CockpitComponents/Control_Panel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CockpitComponents/Directions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CockpitComponents/Directions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CockpitComponents/Seat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CockpitComponents/Seat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CockpitComponents/Switch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CockpitComponents/Switch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Configuration/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Configuration/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DroneComponents/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DroneComponents/Camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DroneComponents/Drone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DroneComponents/Drone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DroneComponents/DroneCentralUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DroneComponents/DroneCentralUnit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DroneComponents/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DroneComponents/Section.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DroneComponents/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DroneComponents/Storage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/CellType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/CellType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/EmergencyDoctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/EmergencyDoctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Gender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/IDCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/IDCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/InfectedCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/InfectedCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/LicenceType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/LicenceType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Lung.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Lung.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Paramedic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Paramedic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Pilot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Pilot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/SeverityCovid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/SeverityCovid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/SpecialIDCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/SpecialIDCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/Staff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/TypeValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanComponents/TypeValidation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TechnicsComponents/Battery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TechnicsComponents/Battery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TechnicsComponents/BatteryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TechnicsComponents/BatteryManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TechnicsComponents/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TechnicsComponents/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TechnicsComponents/Energy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TechnicsComponents/Energy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TechnicsComponents/Technics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TechnicsComponents/Technics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CabinComponents/Cabin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cabincomponents/Cabin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CabinComponents/SlidingDoors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cabincomponents/SlidingDoors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CabinComponents/TransportUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cabincomponents/TransportUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CockpitComponents/AntiTorquePedalLeft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cockpitcomponents/AntiTorquePedalLeft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CockpitComponents/AntiTorquePedalRight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cockpitcomponents/AntiTorquePedalRight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CockpitComponents/Cockpit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cockpitcomponents/Cockpit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CockpitComponents/CollectivePitchControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cockpitcomponents/CollectivePitchControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CockpitComponents/Control_Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cockpitcomponents/ControlPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CockpitComponents/CyclicStick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cockpitcomponents/CyclicStick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CockpitComponents/Directions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cockpitcomponents/Directions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CockpitComponents/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cockpitcomponents/Display.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CockpitComponents/Entrance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cockpitcomponents/Entrance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CockpitComponents/Knob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cockpitcomponents/Knob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CockpitComponents/SafetyBelt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cockpitcomponents/SafetyBelt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CockpitComponents/Seat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cockpitcomponents/Seat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CockpitComponents/Switch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cockpitcomponents/Switch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Configuration/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/configuration/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Configuration/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/configuration/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DroneComponents/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dronecomponents/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DroneComponents/Drone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dronecomponents/Drone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DroneComponents/DroneCentralUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dronecomponents/DroneCentralUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DroneComponents/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dronecomponents/Section.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DroneComponents/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dronecomponents/Storage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/humancomponents/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/CellType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/humancomponents/CellType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/EmergencyDoctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/humancomponents/EmergencyDoctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/humancomponents/Gender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/humancomponents/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/IDCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/humancomponents/IDCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/InfectedCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/humancomponents/InfectedCell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/LicenceType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/humancomponents/LicenceType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Lung.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/humancomponents/Lung.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Paramedic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/humancomponents/Paramedic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/humancomponents/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Pilot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/humancomponents/Pilot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/SeverityCovid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/humancomponents/SeverityCovid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/SpecialIDCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/humancomponents/SpecialIDCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/humancomponents/Staff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/TypeValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/humancomponents/TypeValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HumanComponents/Viron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/humancomponents/Viron.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TechnicsComponents/Battery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/technicscomponents/Battery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TechnicsComponents/BatteryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/technicscomponents/BatteryManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TechnicsComponents/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/technicscomponents/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/technicscomponents/Control.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TechnicsComponents/Energy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/technicscomponents/Energy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TechnicsComponents/Technics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/technicscomponents/Technics.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,13 +103,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/BasicComponents/CentralUnit.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/BasicComponents/RescueHelicopter.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/CockpitComponents/Control_Panel.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/DroneComponents/Drone.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/DroneComponents/DroneCentralUnit.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/DroneComponents/Section.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/DroneComponents/Storage.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/basiccomponents/CentralUnit.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/basiccomponents/RescueHelicopter.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/cockpitcomponents/ControlPanel.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/dronecomponents/Drone.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/dronecomponents/DroneCentralUnit.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/dronecomponents/Section.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/dronecomponents/Storage.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -120,7 +132,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Builder">
+  <component name="RunManager" selected="Gradle.TestApplication">
     <configuration name="Builder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Builder" />
       <module name="Rescue-Helicopter-withTest.main" />
@@ -327,80 +339,80 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Builder.java</url>
-          <line>35</line>
+          <line>33</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/technicscomponents/Control.java</url>
           <line>66</line>
           <option name="timeStamp" value="82" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/BasicComponents/CentralUnit.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/basiccomponents/CentralUnit.java</url>
           <line>90</line>
           <option name="timeStamp" value="93" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/BasicComponents/CentralUnit.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/basiccomponents/CentralUnit.java</url>
           <line>89</line>
           <option name="timeStamp" value="95" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/CockpitComponents/Control_Panel.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/cockpitcomponents/ControlPanel.java</url>
           <line>34</line>
           <option name="timeStamp" value="100" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/technicscomponents/Control.java</url>
           <line>84</line>
           <option name="timeStamp" value="117" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/technicscomponents/Control.java</url>
           <line>42</line>
           <option name="timeStamp" value="121" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/technicscomponents/Control.java</url>
           <line>46</line>
           <option name="timeStamp" value="123" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/technicscomponents/Control.java</url>
           <line>50</line>
           <option name="timeStamp" value="124" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/TechnicsComponents/Control.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/technicscomponents/Control.java</url>
           <line>101</line>
-          <properties class="TechnicsComponents.Control">
+          <properties class="technicscomponents.Control">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/CockpitComponents/Control_Panel.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/cockpitcomponents/ControlPanel.java</url>
           <line>31</line>
-          <properties class="CockpitComponents.Control_Panel" method="switchOnOffMainRotor">
+          <properties class="cockpitcomponents.ControlPanel" method="switchOnOffMainRotor">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="96" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/BasicComponents/MainRotor.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/basiccomponents/MainRotor.java</url>
           <line>11</line>
-          <properties class="BasicComponents.MainRotor" method="switchOn">
+          <properties class="basiccomponents.MainRotor" method="switchOn">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="98" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/BasicComponents/Rotor.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/basiccomponents/Rotor.java</url>
           <line>12</line>
-          <properties class="BasicComponents.Rotor" method="switchOn">
+          <properties class="basiccomponents.Rotor" method="switchOn">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>

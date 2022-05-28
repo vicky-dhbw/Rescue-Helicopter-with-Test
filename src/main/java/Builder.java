@@ -1,37 +1,35 @@
-import BasicComponents.Manufacturer;
-import BasicComponents.RescueHelicopter;
-import TechnicsComponents.BatteryManagement;
-
-import java.io.FileNotFoundException;
+import basiccomponents.Manufacturer;
+import basiccomponents.RescueHelicopter;
+import technicscomponents.BatteryManagement;
 
 public class Builder {
 
     public static void main(String[] args){
 
         RescueHelicopter rescueHelicopter = new RescueHelicopter(Manufacturer.AIRBUS);
-        rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffMainRotor(true);
-        rescueHelicopter.getCockpitLeft().getControl_panel().changeEnergyUsage(BatteryManagement.L);
-        rescueHelicopter.getCockpitLeft().getControl_panel().setDroneFree();     //Note: the drone loads all sections in storage after it detaches
-        rescueHelicopter.getCockpitLeft().getControl_panel().changeEnergyUsage(BatteryManagement.B);
-        rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffMainRotor(false);
-        rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffMainRotor(true);
-        rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffLandingLight(true);
+        rescueHelicopter.getCockpitLeft().getControlPanel().switchOnOffMainRotor(true);
+        rescueHelicopter.getCockpitLeft().getControlPanel().changeEnergyUsage(BatteryManagement.L);
+        rescueHelicopter.getCockpitLeft().getControlPanel().setDroneFree();     //Note: the drone loads all sections in storage after it detaches
+        rescueHelicopter.getCockpitLeft().getControlPanel().changeEnergyUsage(BatteryManagement.B);
+        rescueHelicopter.getCockpitLeft().getControlPanel().switchOnOffMainRotor(false);
+        rescueHelicopter.getCockpitLeft().getControlPanel().switchOnOffMainRotor(true);
+        rescueHelicopter.getCockpitLeft().getControlPanel().switchOnOffLandingLight(true);
 
-        rescueHelicopter.getCockpitLeft().getCollective_pitch_control().raiseCollectivePitchControl();
-        rescueHelicopter.getCockpitLeft().getCollective_pitch_control().lowerCollectivePitchControl();
-        rescueHelicopter.getCockpitLeft().getCollective_pitch_control().raiseCollectivePitchControl();
+        rescueHelicopter.getCockpitLeft().getCollectivePitchControl().raiseCollectivePitchControl();
+        rescueHelicopter.getCockpitLeft().getCollectivePitchControl().lowerCollectivePitchControl();
+        rescueHelicopter.getCockpitLeft().getCollectivePitchControl().raiseCollectivePitchControl();
 
-        rescueHelicopter.getCockpitLeft().getCyclic_stick().tiltLeft(1);
-        rescueHelicopter.getCockpitLeft().getCyclic_stick().tiltBack(3);
-        rescueHelicopter.getCockpitLeft().getCyclic_stick().tiltFront(5);
-        rescueHelicopter.getCockpitLeft().getCyclic_stick().tiltRight(4);
+        rescueHelicopter.getCockpitLeft().getCyclicStick().tiltLeft(1);
+        rescueHelicopter.getCockpitLeft().getCyclicStick().tiltBack(3);
+        rescueHelicopter.getCockpitLeft().getCyclicStick().tiltFront(5);
+        rescueHelicopter.getCockpitLeft().getCyclicStick().tiltRight(4);
 
-        rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffAntiCollisionLight(true);
-        rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffAntiCollisionLight(false);
-        rescueHelicopter.getCockpitLeft().getControl_panel().switchOnOffAntiCollisionLight(true);
+        rescueHelicopter.getCockpitLeft().getControlPanel().switchOnOffAntiCollisionLight(true);
+        rescueHelicopter.getCockpitLeft().getControlPanel().switchOnOffAntiCollisionLight(false);
+        rescueHelicopter.getCockpitLeft().getControlPanel().switchOnOffAntiCollisionLight(true);
 
-        rescueHelicopter.getCockpitLeft().getControl_panel().openCloseBackEntrance(true);
-        rescueHelicopter.getCockpitLeft().getControl_panel().openCloseBackEntrance(false);
+        rescueHelicopter.getCockpitLeft().getControlPanel().openCloseBackEntrance(true);
+        rescueHelicopter.getCockpitLeft().getControlPanel().openCloseBackEntrance(false);
 
         rescueHelicopter.getCockpitLeft().getAntiTorquePedalLeft().decreaseLift();
         rescueHelicopter.getCockpitLeft().getAntiTorquePedalRight().increaseLift();
